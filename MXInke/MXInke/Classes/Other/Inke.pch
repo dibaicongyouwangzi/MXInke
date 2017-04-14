@@ -11,6 +11,7 @@
 
 #import "Masonry.h"
 #import "MXMacros.h"
+#import "MXAPIConfig.h"
 
 //********************日志输出*******************
 #ifdef DEBUG

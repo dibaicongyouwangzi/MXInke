@@ -7,7 +7,7 @@
 //
 
 #import "MXMainTopView.h"
-#import <YYKit/YYKit.h>
+#import <YYKit.h>
 
 @interface MXMainTopView()
 @property (nonatomic, strong) UIView *lineView;

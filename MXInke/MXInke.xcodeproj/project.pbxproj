@@ -28,7 +28,11 @@
 		546CB7711EA0CA570048ADAB /* MXNearViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 546CB76F1EA0CA570048ADAB /* MXNearViewController.m */; };
 		546CB7721EA0CA570048ADAB /* MXNearViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 546CB7701EA0CA570048ADAB /* MXNearViewController.xib */; };
 		546CB7751EA0D4C50048ADAB /* MXMainTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 546CB7741EA0D4C50048ADAB /* MXMainTopView.m */; };
-		BD7C91D646457388DDE14B4E /* Pods_MXInke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 622E8BA903BBA7C3E7FF0042 /* Pods_MXInke.framework */; };
+		546CB77B1EA13A240048ADAB /* KBHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 546CB77A1EA13A240048ADAB /* KBHttpTool.m */; };
+		546CB77E1EA13EA80048ADAB /* MXBaseHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 546CB77D1EA13EA80048ADAB /* MXBaseHandler.m */; };
+		546CB7811EA13F4A0048ADAB /* MXLiveHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 546CB7801EA13F4A0048ADAB /* MXLiveHandler.m */; };
+		546CB7841EA141BB0048ADAB /* MXNetworkEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 546CB7831EA141BB0048ADAB /* MXNetworkEngine.m */; };
+		6D645A60C7CA29773BF83055 /* libPods-MXInke.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B716B2427701A20A42B6026 /* libPods-MXInke.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,8 +73,17 @@
 		546CB7701EA0CA570048ADAB /* MXNearViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MXNearViewController.xib; sourceTree = "<group>"; };
 		546CB7731EA0D4C50048ADAB /* MXMainTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXMainTopView.h; sourceTree = "<group>"; };
 		546CB7741EA0D4C50048ADAB /* MXMainTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXMainTopView.m; sourceTree = "<group>"; };
+		546CB7761EA135330048ADAB /* MXAPIConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXAPIConfig.h; sourceTree = "<group>"; };
+		546CB7791EA13A240048ADAB /* KBHttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBHttpTool.h; sourceTree = "<group>"; };
+		546CB77A1EA13A240048ADAB /* KBHttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBHttpTool.m; sourceTree = "<group>"; };
+		546CB77C1EA13EA80048ADAB /* MXBaseHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXBaseHandler.h; sourceTree = "<group>"; };
+		546CB77D1EA13EA80048ADAB /* MXBaseHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXBaseHandler.m; sourceTree = "<group>"; };
+		546CB77F1EA13F4A0048ADAB /* MXLiveHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXLiveHandler.h; sourceTree = "<group>"; };
+		546CB7801EA13F4A0048ADAB /* MXLiveHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXLiveHandler.m; sourceTree = "<group>"; };
+		546CB7821EA141BB0048ADAB /* MXNetworkEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXNetworkEngine.h; sourceTree = "<group>"; };
+		546CB7831EA141BB0048ADAB /* MXNetworkEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXNetworkEngine.m; sourceTree = "<group>"; };
 		55B3FD7852124680F50FC64A /* Pods-MXInke.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MXInke.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MXInke/Pods-MXInke.debug.xcconfig"; sourceTree = "<group>"; };
-		622E8BA903BBA7C3E7FF0042 /* Pods_MXInke.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MXInke.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B716B2427701A20A42B6026 /* libPods-MXInke.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MXInke.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7FF7D48EA1713139D26E958 /* Pods-MXInke.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MXInke.release.xcconfig"; path = "Pods/Target Support Files/Pods-MXInke/Pods-MXInke.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,7 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD7C91D646457388DDE14B4E /* Pods_MXInke.framework in Frameworks */,
+				6D645A60C7CA29773BF83055 /* libPods-MXInke.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,7 +102,7 @@
 		1B4B4A569D500C51ACA3C9EB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				622E8BA903BBA7C3E7FF0042 /* Pods_MXInke.framework */,
+				5B716B2427701A20A42B6026 /* libPods-MXInke.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -158,6 +171,8 @@
 				546CB7451EA0AC250048ADAB /* MXTabBar.m */,
 				546CB7471EA0B5480048ADAB /* MXBaseViewController.h */,
 				546CB7481EA0B5480048ADAB /* MXBaseViewController.m */,
+				546CB77C1EA13EA80048ADAB /* MXBaseHandler.h */,
+				546CB77D1EA13EA80048ADAB /* MXBaseHandler.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -276,6 +291,9 @@
 		546CB72A1EA0A57D0048ADAB /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				546CB7791EA13A240048ADAB /* KBHttpTool.h */,
+				546CB77A1EA13A240048ADAB /* KBHttpTool.m */,
+				546CB7761EA135330048ADAB /* MXAPIConfig.h */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -337,10 +355,10 @@
 		546CB7341EA0A57D0048ADAB /* Show */ = {
 			isa = PBXGroup;
 			children = (
-				546CB7351EA0A57D0048ADAB /* Controller */,
 				546CB7361EA0A57D0048ADAB /* Handler */,
 				546CB7371EA0A57D0048ADAB /* Model */,
 				546CB7381EA0A57D0048ADAB /* View */,
+				546CB7351EA0A57D0048ADAB /* Controller */,
 			);
 			path = Show;
 			sourceTree = "<group>";
@@ -367,6 +385,10 @@
 		546CB7361EA0A57D0048ADAB /* Handler */ = {
 			isa = PBXGroup;
 			children = (
+				546CB77F1EA13F4A0048ADAB /* MXLiveHandler.h */,
+				546CB7801EA13F4A0048ADAB /* MXLiveHandler.m */,
+				546CB7821EA141BB0048ADAB /* MXNetworkEngine.h */,
+				546CB7831EA141BB0048ADAB /* MXNetworkEngine.m */,
 			);
 			path = Handler;
 			sourceTree = "<group>";
@@ -526,18 +548,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				546CB7751EA0D4C50048ADAB /* MXMainTopView.m in Sources */,
+				546CB7841EA141BB0048ADAB /* MXNetworkEngine.m in Sources */,
 				546CB7521EA0B5AE0048ADAB /* MXProfileViewController.m in Sources */,
 				546CB76C1EA0CA4C0048ADAB /* MXHotViewController.m in Sources */,
 				546CB7431EA0AC1B0048ADAB /* MXTabBarController.m in Sources */,
 				546CB7671EA0CA3F0048ADAB /* MXFocusViewController.m in Sources */,
 				546CB73A1EA0A57D0048ADAB /* main.m in Sources */,
+				546CB77B1EA13A240048ADAB /* KBHttpTool.m in Sources */,
 				546CB7591EA0B6BD0048ADAB /* MXBaseNavigationController.m in Sources */,
 				546CB7461EA0AC250048ADAB /* MXTabBar.m in Sources */,
 				546CB7711EA0CA570048ADAB /* MXNearViewController.m in Sources */,
 				546CB7491EA0B5480048ADAB /* MXBaseViewController.m in Sources */,
 				546CB7621EA0C32F0048ADAB /* MXLaunchViewController.m in Sources */,
 				546CB74D1EA0B5A10048ADAB /* MXMainViewController.m in Sources */,
+				546CB7811EA13F4A0048ADAB /* MXLiveHandler.m in Sources */,
 				546CB7391EA0A57D0048ADAB /* AppDelegate.m in Sources */,
+				546CB77E1EA13EA80048ADAB /* MXBaseHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -652,6 +678,7 @@
 				DEVELOPMENT_TEAM = 796DJH53UJ;
 				GCC_PREFIX_HEADER = MXInke/Classes/Other/Inke.pch;
 				INFOPLIST_FILE = MXInke/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dibaicongyouwangzi.MXInke;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -667,6 +694,7 @@
 				DEVELOPMENT_TEAM = 796DJH53UJ;
 				GCC_PREFIX_HEADER = MXInke/Classes/Other/Inke.pch;
 				INFOPLIST_FILE = MXInke/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dibaicongyouwangzi.MXInke;
 				PRODUCT_NAME = "$(TARGET_NAME)";
