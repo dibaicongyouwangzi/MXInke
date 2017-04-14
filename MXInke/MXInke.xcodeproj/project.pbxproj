@@ -7,25 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		546CB7051EA0A2C60048ADAB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 546CB7041EA0A2C60048ADAB /* main.m */; };
-		546CB7081EA0A2C60048ADAB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 546CB7071EA0A2C60048ADAB /* AppDelegate.m */; };
-		546CB70B1EA0A2C60048ADAB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 546CB70A1EA0A2C60048ADAB /* ViewController.m */; };
-		546CB70E1EA0A2C60048ADAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 546CB70C1EA0A2C60048ADAB /* Main.storyboard */; };
 		546CB7101EA0A2C60048ADAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 546CB70F1EA0A2C60048ADAB /* Assets.xcassets */; };
 		546CB7131EA0A2C60048ADAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 546CB7111EA0A2C60048ADAB /* LaunchScreen.storyboard */; };
+		546CB7391EA0A57D0048ADAB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 546CB72D1EA0A57D0048ADAB /* AppDelegate.m */; };
+		546CB73A1EA0A57D0048ADAB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 546CB72E1EA0A57D0048ADAB /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		546CB7001EA0A2C60048ADAB /* MXInke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MXInke.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		546CB7041EA0A2C60048ADAB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		546CB7061EA0A2C60048ADAB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		546CB7071EA0A2C60048ADAB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		546CB7091EA0A2C60048ADAB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		546CB70A1EA0A2C60048ADAB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		546CB70D1EA0A2C60048ADAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		546CB70F1EA0A2C60048ADAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		546CB7121EA0A2C60048ADAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		546CB7141EA0A2C60048ADAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		546CB72C1EA0A57D0048ADAB /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		546CB72D1EA0A57D0048ADAB /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		546CB72E1EA0A57D0048ADAB /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +53,7 @@
 		546CB7021EA0A2C60048ADAB /* MXInke */ = {
 			isa = PBXGroup;
 			children = (
-				546CB7061EA0A2C60048ADAB /* AppDelegate.h */,
-				546CB7071EA0A2C60048ADAB /* AppDelegate.m */,
-				546CB7091EA0A2C60048ADAB /* ViewController.h */,
-				546CB70A1EA0A2C60048ADAB /* ViewController.m */,
-				546CB70C1EA0A2C60048ADAB /* Main.storyboard */,
-				546CB70F1EA0A2C60048ADAB /* Assets.xcassets */,
-				546CB7111EA0A2C60048ADAB /* LaunchScreen.storyboard */,
-				546CB7141EA0A2C60048ADAB /* Info.plist */,
+				546CB71A1EA0A57D0048ADAB /* Classes */,
 				546CB7031EA0A2C60048ADAB /* Supporting Files */,
 			);
 			path = MXInke;
@@ -74,9 +62,237 @@
 		546CB7031EA0A2C60048ADAB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				546CB7041EA0A2C60048ADAB /* main.m */,
+				546CB70F1EA0A2C60048ADAB /* Assets.xcassets */,
+				546CB7111EA0A2C60048ADAB /* LaunchScreen.storyboard */,
+				546CB7141EA0A2C60048ADAB /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		546CB71A1EA0A57D0048ADAB /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				546CB71B1EA0A57D0048ADAB /* Base */,
+				546CB71C1EA0A57D0048ADAB /* Helper */,
+				546CB71F1EA0A57D0048ADAB /* Launch */,
+				546CB7241EA0A57D0048ADAB /* Lib */,
+				546CB7251EA0A57D0048ADAB /* Live */,
+				546CB72A1EA0A57D0048ADAB /* Network */,
+				546CB72B1EA0A57D0048ADAB /* Other */,
+				546CB72F1EA0A57D0048ADAB /* Profile */,
+				546CB7341EA0A57D0048ADAB /* Show */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		546CB71B1EA0A57D0048ADAB /* Base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		546CB71C1EA0A57D0048ADAB /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				546CB71D1EA0A57D0048ADAB /* Category */,
+				546CB71E1EA0A57D0048ADAB /* Tools */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		546CB71D1EA0A57D0048ADAB /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		546CB71E1EA0A57D0048ADAB /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		546CB71F1EA0A57D0048ADAB /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				546CB7201EA0A57D0048ADAB /* Controller */,
+				546CB7211EA0A57D0048ADAB /* Handler */,
+				546CB7221EA0A57D0048ADAB /* Model */,
+				546CB7231EA0A57D0048ADAB /* View */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		546CB7201EA0A57D0048ADAB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		546CB7211EA0A57D0048ADAB /* Handler */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Handler;
+			sourceTree = "<group>";
+		};
+		546CB7221EA0A57D0048ADAB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		546CB7231EA0A57D0048ADAB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		546CB7241EA0A57D0048ADAB /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		546CB7251EA0A57D0048ADAB /* Live */ = {
+			isa = PBXGroup;
+			children = (
+				546CB7261EA0A57D0048ADAB /* Controller */,
+				546CB7271EA0A57D0048ADAB /* Handler */,
+				546CB7281EA0A57D0048ADAB /* Model */,
+				546CB7291EA0A57D0048ADAB /* View */,
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		546CB7261EA0A57D0048ADAB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		546CB7271EA0A57D0048ADAB /* Handler */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Handler;
+			sourceTree = "<group>";
+		};
+		546CB7281EA0A57D0048ADAB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		546CB7291EA0A57D0048ADAB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		546CB72A1EA0A57D0048ADAB /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		546CB72B1EA0A57D0048ADAB /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				546CB72C1EA0A57D0048ADAB /* AppDelegate.h */,
+				546CB72D1EA0A57D0048ADAB /* AppDelegate.m */,
+				546CB72E1EA0A57D0048ADAB /* main.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		546CB72F1EA0A57D0048ADAB /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				546CB7301EA0A57D0048ADAB /* Controller */,
+				546CB7311EA0A57D0048ADAB /* Handler */,
+				546CB7321EA0A57D0048ADAB /* Model */,
+				546CB7331EA0A57D0048ADAB /* View */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		546CB7301EA0A57D0048ADAB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		546CB7311EA0A57D0048ADAB /* Handler */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Handler;
+			sourceTree = "<group>";
+		};
+		546CB7321EA0A57D0048ADAB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		546CB7331EA0A57D0048ADAB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		546CB7341EA0A57D0048ADAB /* Show */ = {
+			isa = PBXGroup;
+			children = (
+				546CB7351EA0A57D0048ADAB /* Controller */,
+				546CB7361EA0A57D0048ADAB /* Handler */,
+				546CB7371EA0A57D0048ADAB /* Model */,
+				546CB7381EA0A57D0048ADAB /* View */,
+			);
+			path = Show;
+			sourceTree = "<group>";
+		};
+		546CB7351EA0A57D0048ADAB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		546CB7361EA0A57D0048ADAB /* Handler */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Handler;
+			sourceTree = "<group>";
+		};
+		546CB7371EA0A57D0048ADAB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		546CB7381EA0A57D0048ADAB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -105,6 +321,7 @@
 		546CB6F81EA0A2C60048ADAB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = MX;
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "迪拜葱油王子";
 				TargetAttributes = {
@@ -140,7 +357,6 @@
 			files = (
 				546CB7131EA0A2C60048ADAB /* LaunchScreen.storyboard in Resources */,
 				546CB7101EA0A2C60048ADAB /* Assets.xcassets in Resources */,
-				546CB70E1EA0A2C60048ADAB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,23 +367,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				546CB70B1EA0A2C60048ADAB /* ViewController.m in Sources */,
-				546CB7081EA0A2C60048ADAB /* AppDelegate.m in Sources */,
-				546CB7051EA0A2C60048ADAB /* main.m in Sources */,
+				546CB73A1EA0A57D0048ADAB /* main.m in Sources */,
+				546CB7391EA0A57D0048ADAB /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		546CB70C1EA0A2C60048ADAB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				546CB70D1EA0A2C60048ADAB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		546CB7111EA0A2C60048ADAB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -271,6 +478,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 796DJH53UJ;
 				INFOPLIST_FILE = MXInke/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -283,6 +491,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 796DJH53UJ;
 				INFOPLIST_FILE = MXInke/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
