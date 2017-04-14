@@ -13,10 +13,18 @@
 #import "MXNetworkEngine.h"
 
 @interface MXHotViewController ()
-
+@property (nonatomic, strong) NSMutableArray *datalist;
 @end
 
 @implementation MXHotViewController
+
+- (NSMutableArray *)datalist {
+    if (!_datalist) {
+        _datalist = [NSMutableArray array];
+    }
+    return _datalist;
+}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -28,13 +36,29 @@
 
 - (void)loadData {
     [MXNetworkEngine MX_AFJsonGetRequest:MainData success:^(id object) {
-       
-        MXLog(@"%@", object);
         
+        [self.datalist addObjectsFromArray:object];
+        [self.tableView reloadData];
     } failure:^(NSError *error) {
         
         MXLog(@"error");
     }];
+}
+
+
+#pragma mark - <UITableViewDataSource>
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.datalist.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    static NSString *ID = @"cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
+    if(cell == nil){
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
+    }
+    return cell;
 }
 
 @end

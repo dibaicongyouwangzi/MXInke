@@ -8,6 +8,8 @@
 
 #import "MXNetworkEngine.h"
 #import <AFNetworking.h>
+#import "MXLive.h"
+#import <MJExtension.h>
 
 @implementation MXNetworkEngine
 
@@ -22,7 +24,10 @@
         if ([responseObject[@"dm_error"] integerValue] != 0) {
             failure(responseObject[@"error_msg"]);
         } else {
-            success(responseObject);
+            // 如果返回信息正确
+            // 数据解析
+            NSArray *lives = [MXLive mj_objectArrayWithKeyValuesArray:responseObject[@"lives"]];
+            success(lives);
         }
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {

@@ -8,6 +8,6 @@
 
 #import "MXBaseViewController.h"
 
-@interface MXHotViewController : MXBaseViewController
+@interface MXHotViewController : UITableViewController
 
 @end
