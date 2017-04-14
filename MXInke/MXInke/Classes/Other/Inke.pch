@@ -1,0 +1,36 @@
+//
+//  Inke.pch
+//  MXInke
+//
+//  Created by 迪拜葱油王子 on 2017/4/14.
+//  Copyright © 2017年 迪拜葱油王子. All rights reserved.
+//
+
+#ifndef Inke_pch
+#define Inke_pch
+
+#import "Masonry.h"
+#import "MXMacros.h"
+
+//********************日志输出*******************
+#ifdef DEBUG
+#define MXLog(...) NSLog(__VA_ARGS__)
+#else
+#define MXLog(...)
+#endif
+
+
+//********************颜色**********************
+#define MXColor(r, g, b) [UIColor colorWithRed:(r) / 255.0 green:(g) / 255.0 blue:(b) / 255.0 alpha:1.0]
+#define MXRandomColor MXColor(arc4random_uniform(254), arc4random_uniform(254), arc4random_uniform(254))
+#define MXGlobalBg MXColor(230, 230, 230)
+
+
+
+//********************通知**********************
+#define MXNotificationCenter [NSNotificationCenter defaultCenter]
+
+
+
+
+#endif
