@@ -27,6 +27,7 @@
 		546CB76D1EA0CA4C0048ADAB /* MXHotViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 546CB76B1EA0CA4C0048ADAB /* MXHotViewController.xib */; };
 		546CB7711EA0CA570048ADAB /* MXNearViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 546CB76F1EA0CA570048ADAB /* MXNearViewController.m */; };
 		546CB7721EA0CA570048ADAB /* MXNearViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 546CB7701EA0CA570048ADAB /* MXNearViewController.xib */; };
+		546CB7751EA0D4C50048ADAB /* MXMainTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 546CB7741EA0D4C50048ADAB /* MXMainTopView.m */; };
 		BD7C91D646457388DDE14B4E /* Pods_MXInke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 622E8BA903BBA7C3E7FF0042 /* Pods_MXInke.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +67,8 @@
 		546CB76E1EA0CA570048ADAB /* MXNearViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXNearViewController.h; sourceTree = "<group>"; };
 		546CB76F1EA0CA570048ADAB /* MXNearViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXNearViewController.m; sourceTree = "<group>"; };
 		546CB7701EA0CA570048ADAB /* MXNearViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MXNearViewController.xib; sourceTree = "<group>"; };
+		546CB7731EA0D4C50048ADAB /* MXMainTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXMainTopView.h; sourceTree = "<group>"; };
+		546CB7741EA0D4C50048ADAB /* MXMainTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXMainTopView.m; sourceTree = "<group>"; };
 		55B3FD7852124680F50FC64A /* Pods-MXInke.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MXInke.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MXInke/Pods-MXInke.debug.xcconfig"; sourceTree = "<group>"; };
 		622E8BA903BBA7C3E7FF0042 /* Pods_MXInke.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MXInke.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7FF7D48EA1713139D26E958 /* Pods-MXInke.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MXInke.release.xcconfig"; path = "Pods/Target Support Files/Pods-MXInke/Pods-MXInke.release.xcconfig"; sourceTree = "<group>"; };
@@ -378,6 +381,8 @@
 		546CB7381EA0A57D0048ADAB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				546CB7731EA0D4C50048ADAB /* MXMainTopView.h */,
+				546CB7741EA0D4C50048ADAB /* MXMainTopView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -520,6 +525,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				546CB7751EA0D4C50048ADAB /* MXMainTopView.m in Sources */,
 				546CB7521EA0B5AE0048ADAB /* MXProfileViewController.m in Sources */,
 				546CB76C1EA0CA4C0048ADAB /* MXHotViewController.m in Sources */,
 				546CB7431EA0AC1B0048ADAB /* MXTabBarController.m in Sources */,
