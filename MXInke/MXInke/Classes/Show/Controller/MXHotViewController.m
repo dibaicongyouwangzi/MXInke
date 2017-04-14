@@ -12,6 +12,7 @@
 #import "MXHotViewController.h"
 #import "MXNetworkEngine.h"
 #import "MXLiveCell.h"
+#import "MXPlayerViewController.h"
 
 @interface MXHotViewController ()
 @property (nonatomic, strong) NSMutableArray *datalist;
@@ -38,6 +39,7 @@ static NSString *identifier = @"live";
 }
 
 - (void)setupUI {
+    self.tableView.backgroundColor = MXGlobalBg;
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([MXLiveCell class]) bundle:nil] forCellReuseIdentifier:identifier];
     self.tableView.contentInset = UIEdgeInsetsMake(64, 0, 49 + 70, 0);
     self.tableView.scrollIndicatorInsets = self.tableView.contentInset;
@@ -64,10 +66,16 @@ static NSString *identifier = @"live";
     
     MXLiveCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     cell.live = self.datalist[indexPath.row];
-    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+   
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    MXPlayerViewController *playerVc = [[MXPlayerViewController alloc] init];
+    playerVc.live = self.datalist[indexPath.row];
+    [self.navigationController pushViewController:playerVc animated:YES];
+}
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 70 + SCREEN_WIDTH;

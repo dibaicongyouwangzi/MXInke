@@ -36,4 +36,5 @@
     [self.bigImageView sd_setImageWithURL:[NSURL URLWithString:live.creator.portrait] placeholderImage:[UIImage imageNamed:@"default_room"]];
 }
 
+
 @end

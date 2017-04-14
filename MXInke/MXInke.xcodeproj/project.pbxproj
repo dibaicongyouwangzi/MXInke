@@ -36,6 +36,21 @@
 		546CB7901EA14A990048ADAB /* MXMJExtensionConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 546CB78F1EA14A990048ADAB /* MXMJExtensionConfig.m */; };
 		546CB7941EA1501B0048ADAB /* MXLiveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 546CB7921EA1501B0048ADAB /* MXLiveCell.m */; };
 		546CB7951EA1501B0048ADAB /* MXLiveCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 546CB7931EA1501B0048ADAB /* MXLiveCell.xib */; };
+		546CB7991EA163140048ADAB /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 546CB7981EA163140048ADAB /* AudioToolbox.framework */; };
+		546CB79B1EA1631C0048ADAB /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 546CB79A1EA1631C0048ADAB /* AVFoundation.framework */; };
+		546CB79D1EA163260048ADAB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 546CB79C1EA163260048ADAB /* CoreGraphics.framework */; };
+		546CB79F1EA1632E0048ADAB /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 546CB79E1EA1632E0048ADAB /* CoreMedia.framework */; };
+		546CB7A11EA163360048ADAB /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 546CB7A01EA163360048ADAB /* CoreVideo.framework */; };
+		546CB7A31EA1633E0048ADAB /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 546CB7A21EA1633E0048ADAB /* libbz2.tbd */; };
+		546CB7A51EA163450048ADAB /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 546CB7A41EA163450048ADAB /* libz.tbd */; };
+		546CB7A71EA163500048ADAB /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 546CB7A61EA163500048ADAB /* MediaPlayer.framework */; };
+		546CB7A91EA1635D0048ADAB /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 546CB7A81EA1635D0048ADAB /* MobileCoreServices.framework */; };
+		546CB7AB1EA163650048ADAB /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 546CB7AA1EA163650048ADAB /* OpenGLES.framework */; };
+		546CB7AD1EA1636D0048ADAB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 546CB7AC1EA1636D0048ADAB /* QuartzCore.framework */; };
+		546CB7AF1EA163790048ADAB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 546CB7AE1EA163790048ADAB /* UIKit.framework */; };
+		546CB7B11EA163800048ADAB /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 546CB7B01EA163800048ADAB /* VideoToolbox.framework */; };
+		546CB7B51EA167CA0048ADAB /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 546CB7B41EA167C90048ADAB /* IJKMediaFramework.framework */; };
+		546CB7B81EA168400048ADAB /* MXPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 546CB7B71EA168400048ADAB /* MXPlayerViewController.m */; };
 		6D645A60C7CA29773BF83055 /* libPods-MXInke.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B716B2427701A20A42B6026 /* libPods-MXInke.a */; };
 /* End PBXBuildFile section */
 
@@ -94,6 +109,22 @@
 		546CB7911EA1501B0048ADAB /* MXLiveCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXLiveCell.h; sourceTree = "<group>"; };
 		546CB7921EA1501B0048ADAB /* MXLiveCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXLiveCell.m; sourceTree = "<group>"; };
 		546CB7931EA1501B0048ADAB /* MXLiveCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MXLiveCell.xib; sourceTree = "<group>"; };
+		546CB7981EA163140048ADAB /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		546CB79A1EA1631C0048ADAB /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		546CB79C1EA163260048ADAB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		546CB79E1EA1632E0048ADAB /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		546CB7A01EA163360048ADAB /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		546CB7A21EA1633E0048ADAB /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		546CB7A41EA163450048ADAB /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		546CB7A61EA163500048ADAB /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		546CB7A81EA1635D0048ADAB /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		546CB7AA1EA163650048ADAB /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		546CB7AC1EA1636D0048ADAB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		546CB7AE1EA163790048ADAB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		546CB7B01EA163800048ADAB /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		546CB7B41EA167C90048ADAB /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
+		546CB7B61EA168400048ADAB /* MXPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXPlayerViewController.h; sourceTree = "<group>"; };
+		546CB7B71EA168400048ADAB /* MXPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXPlayerViewController.m; sourceTree = "<group>"; };
 		55B3FD7852124680F50FC64A /* Pods-MXInke.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MXInke.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MXInke/Pods-MXInke.debug.xcconfig"; sourceTree = "<group>"; };
 		5B716B2427701A20A42B6026 /* libPods-MXInke.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MXInke.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7FF7D48EA1713139D26E958 /* Pods-MXInke.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MXInke.release.xcconfig"; path = "Pods/Target Support Files/Pods-MXInke/Pods-MXInke.release.xcconfig"; sourceTree = "<group>"; };
@@ -104,6 +135,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				546CB7B11EA163800048ADAB /* VideoToolbox.framework in Frameworks */,
+				546CB7AF1EA163790048ADAB /* UIKit.framework in Frameworks */,
+				546CB7AD1EA1636D0048ADAB /* QuartzCore.framework in Frameworks */,
+				546CB7B51EA167CA0048ADAB /* IJKMediaFramework.framework in Frameworks */,
+				546CB7AB1EA163650048ADAB /* OpenGLES.framework in Frameworks */,
+				546CB7A91EA1635D0048ADAB /* MobileCoreServices.framework in Frameworks */,
+				546CB7A71EA163500048ADAB /* MediaPlayer.framework in Frameworks */,
+				546CB7A51EA163450048ADAB /* libz.tbd in Frameworks */,
+				546CB7A31EA1633E0048ADAB /* libbz2.tbd in Frameworks */,
+				546CB7A11EA163360048ADAB /* CoreVideo.framework in Frameworks */,
+				546CB79F1EA1632E0048ADAB /* CoreMedia.framework in Frameworks */,
+				546CB79D1EA163260048ADAB /* CoreGraphics.framework in Frameworks */,
+				546CB79B1EA1631C0048ADAB /* AVFoundation.framework in Frameworks */,
+				546CB7991EA163140048ADAB /* AudioToolbox.framework in Frameworks */,
 				6D645A60C7CA29773BF83055 /* libPods-MXInke.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -114,6 +159,20 @@
 		1B4B4A569D500C51ACA3C9EB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				546CB7B41EA167C90048ADAB /* IJKMediaFramework.framework */,
+				546CB7B01EA163800048ADAB /* VideoToolbox.framework */,
+				546CB7AE1EA163790048ADAB /* UIKit.framework */,
+				546CB7AC1EA1636D0048ADAB /* QuartzCore.framework */,
+				546CB7AA1EA163650048ADAB /* OpenGLES.framework */,
+				546CB7A81EA1635D0048ADAB /* MobileCoreServices.framework */,
+				546CB7A61EA163500048ADAB /* MediaPlayer.framework */,
+				546CB7A41EA163450048ADAB /* libz.tbd */,
+				546CB7A21EA1633E0048ADAB /* libbz2.tbd */,
+				546CB7A01EA163360048ADAB /* CoreVideo.framework */,
+				546CB79E1EA1632E0048ADAB /* CoreMedia.framework */,
+				546CB79C1EA163260048ADAB /* CoreGraphics.framework */,
+				546CB79A1EA1631C0048ADAB /* AVFoundation.framework */,
+				546CB7981EA163140048ADAB /* AudioToolbox.framework */,
 				5B716B2427701A20A42B6026 /* libPods-MXInke.a */,
 			);
 			name = Frameworks;
@@ -389,6 +448,8 @@
 				546CB76E1EA0CA570048ADAB /* MXNearViewController.h */,
 				546CB76F1EA0CA570048ADAB /* MXNearViewController.m */,
 				546CB7701EA0CA570048ADAB /* MXNearViewController.xib */,
+				546CB7B61EA168400048ADAB /* MXPlayerViewController.h */,
+				546CB7B71EA168400048ADAB /* MXPlayerViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -583,6 +644,7 @@
 				546CB7491EA0B5480048ADAB /* MXBaseViewController.m in Sources */,
 				546CB7621EA0C32F0048ADAB /* MXLaunchViewController.m in Sources */,
 				546CB74D1EA0B5A10048ADAB /* MXMainViewController.m in Sources */,
+				546CB7B81EA168400048ADAB /* MXPlayerViewController.m in Sources */,
 				546CB7901EA14A990048ADAB /* MXMJExtensionConfig.m in Sources */,
 				546CB7811EA13F4A0048ADAB /* MXLiveHandler.m in Sources */,
 				546CB7391EA0A57D0048ADAB /* AppDelegate.m in Sources */,
@@ -700,6 +762,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 796DJH53UJ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MXInke/Classes",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PREFIX_HEADER = MXInke/Classes/Other/Inke.pch;
 				INFOPLIST_FILE = MXInke/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -716,6 +783,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 796DJH53UJ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MXInke/Classes",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PREFIX_HEADER = MXInke/Classes/Other/Inke.pch;
 				INFOPLIST_FILE = MXInke/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
