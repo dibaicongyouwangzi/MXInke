@@ -24,7 +24,6 @@
 		546CB7671EA0CA3F0048ADAB /* MXFocusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 546CB7651EA0CA3F0048ADAB /* MXFocusViewController.m */; };
 		546CB7681EA0CA3F0048ADAB /* MXFocusViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 546CB7661EA0CA3F0048ADAB /* MXFocusViewController.xib */; };
 		546CB76C1EA0CA4C0048ADAB /* MXHotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 546CB76A1EA0CA4C0048ADAB /* MXHotViewController.m */; };
-		546CB76D1EA0CA4C0048ADAB /* MXHotViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 546CB76B1EA0CA4C0048ADAB /* MXHotViewController.xib */; };
 		546CB7711EA0CA570048ADAB /* MXNearViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 546CB76F1EA0CA570048ADAB /* MXNearViewController.m */; };
 		546CB7721EA0CA570048ADAB /* MXNearViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 546CB7701EA0CA570048ADAB /* MXNearViewController.xib */; };
 		546CB7751EA0D4C50048ADAB /* MXMainTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 546CB7741EA0D4C50048ADAB /* MXMainTopView.m */; };
@@ -35,6 +34,8 @@
 		546CB78A1EA1497F0048ADAB /* MXLive.m in Sources */ = {isa = PBXBuildFile; fileRef = 546CB7891EA1497F0048ADAB /* MXLive.m */; };
 		546CB78D1EA149C70048ADAB /* MXCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 546CB78C1EA149C70048ADAB /* MXCreator.m */; };
 		546CB7901EA14A990048ADAB /* MXMJExtensionConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 546CB78F1EA14A990048ADAB /* MXMJExtensionConfig.m */; };
+		546CB7941EA1501B0048ADAB /* MXLiveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 546CB7921EA1501B0048ADAB /* MXLiveCell.m */; };
+		546CB7951EA1501B0048ADAB /* MXLiveCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 546CB7931EA1501B0048ADAB /* MXLiveCell.xib */; };
 		6D645A60C7CA29773BF83055 /* libPods-MXInke.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B716B2427701A20A42B6026 /* libPods-MXInke.a */; };
 /* End PBXBuildFile section */
 
@@ -70,7 +71,6 @@
 		546CB7661EA0CA3F0048ADAB /* MXFocusViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MXFocusViewController.xib; sourceTree = "<group>"; };
 		546CB7691EA0CA4C0048ADAB /* MXHotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXHotViewController.h; sourceTree = "<group>"; };
 		546CB76A1EA0CA4C0048ADAB /* MXHotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXHotViewController.m; sourceTree = "<group>"; };
-		546CB76B1EA0CA4C0048ADAB /* MXHotViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MXHotViewController.xib; sourceTree = "<group>"; };
 		546CB76E1EA0CA570048ADAB /* MXNearViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXNearViewController.h; sourceTree = "<group>"; };
 		546CB76F1EA0CA570048ADAB /* MXNearViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXNearViewController.m; sourceTree = "<group>"; };
 		546CB7701EA0CA570048ADAB /* MXNearViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MXNearViewController.xib; sourceTree = "<group>"; };
@@ -91,6 +91,9 @@
 		546CB78C1EA149C70048ADAB /* MXCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXCreator.m; sourceTree = "<group>"; };
 		546CB78E1EA14A990048ADAB /* MXMJExtensionConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXMJExtensionConfig.h; sourceTree = "<group>"; };
 		546CB78F1EA14A990048ADAB /* MXMJExtensionConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXMJExtensionConfig.m; sourceTree = "<group>"; };
+		546CB7911EA1501B0048ADAB /* MXLiveCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXLiveCell.h; sourceTree = "<group>"; };
+		546CB7921EA1501B0048ADAB /* MXLiveCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXLiveCell.m; sourceTree = "<group>"; };
+		546CB7931EA1501B0048ADAB /* MXLiveCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MXLiveCell.xib; sourceTree = "<group>"; };
 		55B3FD7852124680F50FC64A /* Pods-MXInke.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MXInke.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MXInke/Pods-MXInke.debug.xcconfig"; sourceTree = "<group>"; };
 		5B716B2427701A20A42B6026 /* libPods-MXInke.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MXInke.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7FF7D48EA1713139D26E958 /* Pods-MXInke.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MXInke.release.xcconfig"; path = "Pods/Target Support Files/Pods-MXInke/Pods-MXInke.release.xcconfig"; sourceTree = "<group>"; };
@@ -383,7 +386,6 @@
 				546CB7661EA0CA3F0048ADAB /* MXFocusViewController.xib */,
 				546CB7691EA0CA4C0048ADAB /* MXHotViewController.h */,
 				546CB76A1EA0CA4C0048ADAB /* MXHotViewController.m */,
-				546CB76B1EA0CA4C0048ADAB /* MXHotViewController.xib */,
 				546CB76E1EA0CA570048ADAB /* MXNearViewController.h */,
 				546CB76F1EA0CA570048ADAB /* MXNearViewController.m */,
 				546CB7701EA0CA570048ADAB /* MXNearViewController.xib */,
@@ -420,6 +422,9 @@
 			children = (
 				546CB7731EA0D4C50048ADAB /* MXMainTopView.h */,
 				546CB7741EA0D4C50048ADAB /* MXMainTopView.m */,
+				546CB7911EA1501B0048ADAB /* MXLiveCell.h */,
+				546CB7921EA1501B0048ADAB /* MXLiveCell.m */,
+				546CB7931EA1501B0048ADAB /* MXLiveCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -498,11 +503,11 @@
 			files = (
 				546CB7131EA0A2C60048ADAB /* LaunchScreen.storyboard in Resources */,
 				546CB7531EA0B5AE0048ADAB /* MXProfileViewController.xib in Resources */,
+				546CB7951EA1501B0048ADAB /* MXLiveCell.xib in Resources */,
 				546CB7631EA0C32F0048ADAB /* MXLaunchViewController.xib in Resources */,
 				546CB7721EA0CA570048ADAB /* MXNearViewController.xib in Resources */,
 				546CB7101EA0A2C60048ADAB /* Assets.xcassets in Resources */,
 				546CB7681EA0CA3F0048ADAB /* MXFocusViewController.xib in Resources */,
-				546CB76D1EA0CA4C0048ADAB /* MXHotViewController.xib in Resources */,
 				546CB74E1EA0B5A10048ADAB /* MXMainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -563,6 +568,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				546CB7751EA0D4C50048ADAB /* MXMainTopView.m in Sources */,
+				546CB7941EA1501B0048ADAB /* MXLiveCell.m in Sources */,
 				546CB7841EA141BB0048ADAB /* MXNetworkEngine.m in Sources */,
 				546CB7521EA0B5AE0048ADAB /* MXProfileViewController.m in Sources */,
 				546CB76C1EA0CA4C0048ADAB /* MXHotViewController.m in Sources */,

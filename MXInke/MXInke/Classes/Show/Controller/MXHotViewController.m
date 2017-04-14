@@ -11,12 +11,15 @@
 
 #import "MXHotViewController.h"
 #import "MXNetworkEngine.h"
+#import "MXLiveCell.h"
 
 @interface MXHotViewController ()
 @property (nonatomic, strong) NSMutableArray *datalist;
 @end
 
 @implementation MXHotViewController
+
+static NSString *identifier = @"live";
 
 - (NSMutableArray *)datalist {
     if (!_datalist) {
@@ -28,10 +31,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    self.view.backgroundColor = MXRandomColor;
+    
+    [self setupUI];
     
     [self loadData];
+}
+
+- (void)setupUI {
+    [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([MXLiveCell class]) bundle:nil] forCellReuseIdentifier:identifier];
+    self.tableView.contentInset = UIEdgeInsetsMake(64, 0, 49 + 70, 0);
+    self.tableView.scrollIndicatorInsets = self.tableView.contentInset;
 }
 
 - (void)loadData {
@@ -53,12 +62,15 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    static NSString *ID = @"cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
-    if(cell == nil){
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
-    }
+    MXLiveCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+    cell.live = self.datalist[indexPath.row];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
+}
+
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 70 + SCREEN_WIDTH;
 }
 
 @end

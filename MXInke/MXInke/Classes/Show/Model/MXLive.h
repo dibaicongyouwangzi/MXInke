@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-@class MXCreator;
+#import "MXCreator.h"
 @interface MXLive : NSObject
 
 @property (nonatomic, strong) NSString *city;
