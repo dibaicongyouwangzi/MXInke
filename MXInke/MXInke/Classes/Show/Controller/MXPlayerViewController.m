@@ -8,18 +8,55 @@
 
 #import "MXPlayerViewController.h"
 #import <IJKMediaFramework/IJKMediaFramework.h>
+#import <UIImageView+WebCache.h>
+#import <YYKit.h>
 
 @interface MXPlayerViewController ()
 @property (nonatomic, retain) id<IJKMediaPlayback> player;
+
+/** 毛玻璃 */
+@property (nonatomic, strong) UIImageView *blurImageView;
+
+@property (nonatomic, strong) UIButton *closeButton;
 @end
 
 @implementation MXPlayerViewController
 
+- (UIButton *)closeButton {
+    if (!_closeButton) {
+        _closeButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        [_closeButton setImage:[UIImage imageNamed:@"mg_room_btn_guan_h"] forState:UIControlStateNormal];
+        [_closeButton sizeToFit];
+        _closeButton.frame = CGRectMake(SCREEN_WIDTH - _closeButton.width - 10, SCREEN_HEIGHT - _closeButton.height - 10, _closeButton.width, _closeButton.height);
+        [_closeButton addTarget:self action:@selector(closeAction) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _closeButton;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    self.view.backgroundColor = MXGlobalBg;
+    [self initUI];
+
     [self initPlayer];
+}
+
+- (void)initUI {
+//    self.view.backgroundColor = [UIColor blackColor];
+    self.blurImageView = [[UIImageView alloc] initWithFrame:self.view.bounds];
+    [self.blurImageView sd_setImageWithURL:[NSURL URLWithString:self.live.creator.portrait] placeholderImage:[UIImage imageNamed:@"default_room"]];
+    [self.view addSubview:self.blurImageView];
+    
+    // 创建毛玻璃效果
+    UIBlurEffect *blur = [UIBlurEffect effectWithStyle:UIBlurEffectStyleLight];
+    // 创建毛玻璃视图
+    UIVisualEffectView *view = [[UIVisualEffectView alloc] initWithEffect:blur];
+    view.frame = self.blurImageView.bounds;
+    [self.blurImageView addSubview:view];
+}
+
+- (void)closeAction {
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)initPlayer {
@@ -30,10 +67,14 @@
     self.player.view.frame = self.view.bounds;
     self.player.shouldAutoplay = YES;
     [self.view addSubview:self.player.view];
+    
+    [self.view addSubview:self.closeButton];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+    
+    self.navigationController.navigationBarHidden = YES;
     
     //注册直播需要用的通知
     [self installMovieNotificationObservers];
@@ -42,6 +83,11 @@
     [self.player prepareToPlay];
 }
 
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    
+    self.navigationController.navigationBarHidden = NO;
+}
 
 - (void)viewDidDisappear:(BOOL)animated {
     [super viewDidDisappear:animated];

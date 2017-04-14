@@ -74,6 +74,7 @@ static NSString *identifier = @"live";
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     MXPlayerViewController *playerVc = [[MXPlayerViewController alloc] init];
     playerVc.live = self.datalist[indexPath.row];
+    playerVc.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:playerVc animated:YES];
 }
 
