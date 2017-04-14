@@ -19,6 +19,8 @@
 		546CB7521EA0B5AE0048ADAB /* MXProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 546CB7501EA0B5AE0048ADAB /* MXProfileViewController.m */; };
 		546CB7531EA0B5AE0048ADAB /* MXProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 546CB7511EA0B5AE0048ADAB /* MXProfileViewController.xib */; };
 		546CB7591EA0B6BD0048ADAB /* MXBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 546CB7581EA0B6BD0048ADAB /* MXBaseNavigationController.m */; };
+		546CB7621EA0C32F0048ADAB /* MXLaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 546CB7601EA0C32F0048ADAB /* MXLaunchViewController.m */; };
+		546CB7631EA0C32F0048ADAB /* MXLaunchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 546CB7611EA0C32F0048ADAB /* MXLaunchViewController.xib */; };
 		BD7C91D646457388DDE14B4E /* Pods_MXInke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 622E8BA903BBA7C3E7FF0042 /* Pods_MXInke.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +48,9 @@
 		546CB7511EA0B5AE0048ADAB /* MXProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MXProfileViewController.xib; sourceTree = "<group>"; };
 		546CB7571EA0B6BD0048ADAB /* MXBaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXBaseNavigationController.h; sourceTree = "<group>"; };
 		546CB7581EA0B6BD0048ADAB /* MXBaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXBaseNavigationController.m; sourceTree = "<group>"; };
+		546CB75F1EA0C32F0048ADAB /* MXLaunchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXLaunchViewController.h; sourceTree = "<group>"; };
+		546CB7601EA0C32F0048ADAB /* MXLaunchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXLaunchViewController.m; sourceTree = "<group>"; };
+		546CB7611EA0C32F0048ADAB /* MXLaunchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MXLaunchViewController.xib; sourceTree = "<group>"; };
 		55B3FD7852124680F50FC64A /* Pods-MXInke.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MXInke.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MXInke/Pods-MXInke.debug.xcconfig"; sourceTree = "<group>"; };
 		622E8BA903BBA7C3E7FF0042 /* Pods_MXInke.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MXInke.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7FF7D48EA1713139D26E958 /* Pods-MXInke.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MXInke.release.xcconfig"; path = "Pods/Target Support Files/Pods-MXInke/Pods-MXInke.release.xcconfig"; sourceTree = "<group>"; };
@@ -114,8 +119,8 @@
 				546CB71B1EA0A57D0048ADAB /* Base */,
 				546CB7341EA0A57D0048ADAB /* Show */,
 				546CB72F1EA0A57D0048ADAB /* Profile */,
-				546CB71F1EA0A57D0048ADAB /* Launch */,
 				546CB7251EA0A57D0048ADAB /* Live */,
+				546CB71F1EA0A57D0048ADAB /* Launch */,
 				546CB71C1EA0A57D0048ADAB /* Helper */,
 				546CB7241EA0A57D0048ADAB /* Lib */,
 				546CB72A1EA0A57D0048ADAB /* Network */,
@@ -222,6 +227,9 @@
 		546CB7261EA0A57D0048ADAB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				546CB75F1EA0C32F0048ADAB /* MXLaunchViewController.h */,
+				546CB7601EA0C32F0048ADAB /* MXLaunchViewController.m */,
+				546CB7611EA0C32F0048ADAB /* MXLaunchViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -424,6 +432,7 @@
 			files = (
 				546CB7131EA0A2C60048ADAB /* LaunchScreen.storyboard in Resources */,
 				546CB7531EA0B5AE0048ADAB /* MXProfileViewController.xib in Resources */,
+				546CB7631EA0C32F0048ADAB /* MXLaunchViewController.xib in Resources */,
 				546CB7101EA0A2C60048ADAB /* Assets.xcassets in Resources */,
 				546CB74E1EA0B5A10048ADAB /* MXMainViewController.xib in Resources */,
 			);
@@ -490,6 +499,7 @@
 				546CB7591EA0B6BD0048ADAB /* MXBaseNavigationController.m in Sources */,
 				546CB7461EA0AC250048ADAB /* MXTabBar.m in Sources */,
 				546CB7491EA0B5480048ADAB /* MXBaseViewController.m in Sources */,
+				546CB7621EA0C32F0048ADAB /* MXLaunchViewController.m in Sources */,
 				546CB74D1EA0B5A10048ADAB /* MXMainViewController.m in Sources */,
 				546CB7391EA0A57D0048ADAB /* AppDelegate.m in Sources */,
 			);

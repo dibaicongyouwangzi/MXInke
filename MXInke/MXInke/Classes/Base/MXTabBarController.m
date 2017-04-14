@@ -9,6 +9,7 @@
 #import "MXTabBarController.h"
 #import "MXTabBar.h"
 #import "MXBaseNavigationController.h"
+#import "MXLaunchViewController.h"
 
 @interface MXTabBarController ()<MXTabBarDelegate>
 @property (nonatomic, strong) MXTabBar *tabB;
@@ -34,6 +35,11 @@
     
     // 2.添加tabBar
     [self.tabBar addSubview:self.tabB];
+    
+    // 3.解决tabbar的阴影线
+    [[UITabBar appearance] setShadowImage:[UIImage new]];
+    [[UITabBar appearance] setBackgroundImage:[UIImage new]];
+
 }
 
 - (void)addVcs {
@@ -53,6 +59,13 @@
 #pragma mark - <MXTabBarDelegate>
 - (void)tabBar:(MXTabBar *)tabBar clickButton:(MXItemType)index {
     
+    if (index != MXItemTypeLaunch) {
+        return;
+    }
+    
+    // 模态
+    MXLaunchViewController *launchVc = [[MXLaunchViewController alloc] init];
+    [self presentViewController:launchVc animated:YES completion:nil];
 }
 
 

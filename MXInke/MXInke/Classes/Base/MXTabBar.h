@@ -11,7 +11,8 @@
 
 typedef NS_ENUM(NSUInteger, MXItemType) {
     MXItemTypeLive = 0, //展示直播
-    MXItemTypeMe //我的
+    MXItemTypeMe, //我的
+    MXItemTypeLaunch //启动直播
 };
 
 @protocol MXTabBarDelegate <NSObject>

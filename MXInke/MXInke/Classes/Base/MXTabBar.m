@@ -13,6 +13,8 @@
 @property (nonatomic, strong) UIImageView *tabbarBgView;
 @property (nonatomic, strong) NSArray *datalist;
 @property (nonatomic, weak) UIButton *lastSelectedItem;
+@property (nonatomic, strong) UIButton *cameraButton;
+
 @end
 
 @implementation MXTabBar
@@ -31,13 +33,24 @@
     return _datalist;
 }
 
+- (UIButton *)cameraButton {
+    if(!_cameraButton){
+        _cameraButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        [_cameraButton setImage:[UIImage imageNamed:@"tab_launch"] forState:UIControlStateNormal];
+        _cameraButton.tag = MXItemTypeLaunch;
+        [_cameraButton addTarget:self action:@selector(itemClick:) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _cameraButton;
+}
+
+
 
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
         // 1.添加背景
         [self addSubview:self.tabbarBgView];
         
-        // 2.添加两个item
+        // 2.添加左右两边item
         for (NSInteger i = 0; i < self.datalist.count; i++) {
             UIButton *item = [UIButton buttonWithType:UIButtonTypeCustom];
             item.tag = i;
@@ -54,6 +67,9 @@
                 self.lastSelectedItem = item;
             }
         }
+        
+        // 3.添加中间按钮
+        [self addSubview:self.cameraButton];
     }
     return self;
 }
@@ -64,7 +80,7 @@
     // 1.背景frame
     self.tabbarBgView.frame = self.bounds;
     
-    // 2.itemframe
+    // 2.左右两边itemframe
     CGFloat btnW = self.bounds.size.width / self.datalist.count;
     for (NSInteger i = 0; i < self.subviews.count; i++) {
         UIView *btn = self.subviews[i];
@@ -72,11 +88,23 @@
             btn.frame = CGRectMake(btn.tag * btnW, 0, btnW, self.bounds.size.height);
         }
     }
+    
+    // 3.中间按钮的frame
+    [_cameraButton sizeToFit];
+    self.cameraButton.center = CGPointMake(self.bounds.size.width / 2, self.bounds.size.height - 50);
 }
 
 
 - (void)itemClick:(UIButton *)button {
     
+    // 0.通知代理
+    if ([self.delegate respondsToSelector:@selector(tabBar:clickButton:)]) {
+        [self.delegate tabBar:self clickButton:button.tag];
+    }
+    
+    
+    if (button.tag == MXItemTypeLaunch) return;
+
     // 1.切换选中状态
     self.lastSelectedItem.selected = NO;
     button.selected = YES;
@@ -92,11 +120,6 @@
             button.transform = CGAffineTransformIdentity;
         }];
     }];
-    
-    // 3.通知代理
-    if ([self.delegate respondsToSelector:@selector(tabBar:clickButton:)]) {
-        [self.delegate tabBar:self clickButton:button.tag];
-    }
 }
 
 @end
