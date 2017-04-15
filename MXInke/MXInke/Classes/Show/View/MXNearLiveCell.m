@@ -29,4 +29,15 @@
     self.diatanceLabel.text = live.distance;
 }
 
+- (void)showAnimation {
+    
+    if (self.live.isShow) {
+        return;
+    }
+    self.layer.transform = CATransform3DMakeScale(0.1, 0.1, 1);
+    [UIView animateWithDuration:0.25 animations:^{
+        self.layer.transform = CATransform3DMakeScale(1, 1, 1);
+        self.live.show = YES;
+    }];
+}
 @end

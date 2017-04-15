@@ -10,8 +10,13 @@
 #import "MXNearViewController.h"
 #import "MXLiveHandler.h"
 #import "MXNearLiveCell.h"
+#import <YYKit.h>
+#import "MXPlayerViewController.h"
 
-@interface MXNearViewController ()<UICollectionViewDataSource, UICollectionViewDelegate>
+#define kMargin 5
+#define kItemWidth 100
+
+@interface MXNearViewController ()<UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (nonatomic, strong) NSArray *datalist;
 
@@ -32,11 +37,12 @@ static NSString *identifier = @"near";
 
 
 - (void)initUI {
-    self.view.backgroundColor = MXRandomColor;
+    self.collectionView.backgroundColor = [UIColor whiteColor];
     
     [self.collectionView registerNib:[UINib nibWithNibName:@"MXNearLiveCell" bundle:nil] forCellWithReuseIdentifier:identifier];
     
     self.collectionView.contentInset = UIEdgeInsetsMake(64, 0, 49, 0);
+    self.collectionView.scrollIndicatorInsets = self.collectionView.contentInset;
 }
 
 
@@ -66,6 +72,32 @@ static NSString *identifier = @"near";
     return cell;
 }
 
+
+/**
+ * cell将要显示时调用
+ */
+- (void)collectionView:(UICollectionView *)collectionView willDisplayCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath {
+    MXNearLiveCell *c = (MXNearLiveCell *)cell;
+    [c showAnimation];
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+
+    [collectionView deselectItemAtIndexPath:indexPath animated:YES];
+    MXLive *live = self.datalist[indexPath.row];
+    MXPlayerViewController *playerVc = [[MXPlayerViewController alloc] init];
+    playerVc.live = live;
+    [self.navigationController pushViewController:playerVc animated:YES];
+}
+
+
+#pragma mark - <UICollectionViewDelegateFlowLayout>
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
+    
+    NSInteger count = self.collectionView.width / kItemWidth;
+    CGFloat extraWidth = (self.collectionView.width - kMargin * (count + 1)) / count;
+    return CGSizeMake(extraWidth, extraWidth+20);
+}
 
 @end
 

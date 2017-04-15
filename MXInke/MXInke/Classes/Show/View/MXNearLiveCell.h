@@ -11,4 +11,8 @@
 
 @interface MXNearLiveCell : UICollectionViewCell
 @property (nonatomic, strong) MXLive *live;
+
+- (void)showAnimation;
+
+
 @end
