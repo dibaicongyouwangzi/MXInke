@@ -15,5 +15,9 @@
  */
 + (void)executeGetHotLiveTaskWithSuccess:(SuccessBlock)success failure:(FailureBlock)failure;
 
+/**
+ * 获取附近直播信息
+ */
++ (void)executeGetNearLiveTaskWithSuccess:(SuccessBlock)success failure:(FailureBlock)failure;
 
 @end

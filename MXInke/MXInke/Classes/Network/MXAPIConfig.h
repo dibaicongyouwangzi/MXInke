@@ -11,7 +11,7 @@
 @interface MXAPIConfig : NSObject
 
 // 信息服务器地址
-#define SERVER_HOST @"http://116.211.167.106/api/live/gettop?&gender=1&gps_info=118.782018%2C32.065246&is_new_user=0&lc=0000000000000051&cc=TG0001&cv=IK4.0.10_Iphone&proto=7&idfa=BB90F465-479D-4991-8EC1-CF342F53FCC9&idfv=1BF04D05-1915-4C17-995A-F7232021FA3C&devi=6176249a3dec5afeb67ecb226af1a904fba0c8ae&osversion=ios_10.200000&ua=iPhone8_2&imei=&imsi=&uid=49465752&sid=20XRZfpYCD6iVbZm7aPNZKFI5evri0b9hx4FmcXVErVXyHNUX8i3&conn=wifi&mtid=cdee25ed82dc94db6e8a285e9db98687&mtxid=fcd733f3b2da&logid=202&count=5&multiaddr=1&s_sg=308d416baffe0edf44b13b96fc73ee4d&s_sc=100&s_st=1489647616"
+#define SERVER_HOST @"http://service.ingkee.com"
 
 // 图片服务器地址
 #define IMAGE_HOST @"http://img.meelive.cn/"

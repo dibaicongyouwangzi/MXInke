@@ -29,4 +29,6 @@
 @property (nonatomic, strong) NSString *streamAddr;
 @property (nonatomic, assign) NSInteger version;
 
+@property (nonatomic, copy) NSString *distance;
+
 @end

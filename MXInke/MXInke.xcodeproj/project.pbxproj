@@ -54,6 +54,8 @@
 		546CB7BC1EA1CD220048ADAB /* MXLiveChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 546CB7BA1EA1CD220048ADAB /* MXLiveChatViewController.m */; };
 		546CB7BD1EA1CD220048ADAB /* MXLiveChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 546CB7BB1EA1CD220048ADAB /* MXLiveChatViewController.xib */; };
 		546CB7C01EA2041E0048ADAB /* MXLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 546CB7BF1EA2041E0048ADAB /* MXLocationManager.m */; };
+		546CB7C61EA212450048ADAB /* MXNearLiveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 546CB7C41EA212450048ADAB /* MXNearLiveCell.m */; };
+		546CB7C71EA212450048ADAB /* MXNearLiveCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 546CB7C51EA212450048ADAB /* MXNearLiveCell.xib */; };
 		6D645A60C7CA29773BF83055 /* libPods-MXInke.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B716B2427701A20A42B6026 /* libPods-MXInke.a */; };
 /* End PBXBuildFile section */
 
@@ -133,6 +135,9 @@
 		546CB7BB1EA1CD220048ADAB /* MXLiveChatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MXLiveChatViewController.xib; sourceTree = "<group>"; };
 		546CB7BE1EA2041E0048ADAB /* MXLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXLocationManager.h; sourceTree = "<group>"; };
 		546CB7BF1EA2041E0048ADAB /* MXLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXLocationManager.m; sourceTree = "<group>"; };
+		546CB7C31EA212450048ADAB /* MXNearLiveCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXNearLiveCell.h; sourceTree = "<group>"; };
+		546CB7C41EA212450048ADAB /* MXNearLiveCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXNearLiveCell.m; sourceTree = "<group>"; };
+		546CB7C51EA212450048ADAB /* MXNearLiveCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MXNearLiveCell.xib; sourceTree = "<group>"; };
 		55B3FD7852124680F50FC64A /* Pods-MXInke.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MXInke.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MXInke/Pods-MXInke.debug.xcconfig"; sourceTree = "<group>"; };
 		5B716B2427701A20A42B6026 /* libPods-MXInke.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MXInke.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7FF7D48EA1713139D26E958 /* Pods-MXInke.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MXInke.release.xcconfig"; path = "Pods/Target Support Files/Pods-MXInke/Pods-MXInke.release.xcconfig"; sourceTree = "<group>"; };
@@ -499,6 +504,9 @@
 				546CB7911EA1501B0048ADAB /* MXLiveCell.h */,
 				546CB7921EA1501B0048ADAB /* MXLiveCell.m */,
 				546CB7931EA1501B0048ADAB /* MXLiveCell.xib */,
+				546CB7C31EA212450048ADAB /* MXNearLiveCell.h */,
+				546CB7C41EA212450048ADAB /* MXNearLiveCell.m */,
+				546CB7C51EA212450048ADAB /* MXNearLiveCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -579,6 +587,7 @@
 				546CB7531EA0B5AE0048ADAB /* MXProfileViewController.xib in Resources */,
 				546CB7951EA1501B0048ADAB /* MXLiveCell.xib in Resources */,
 				546CB7BD1EA1CD220048ADAB /* MXLiveChatViewController.xib in Resources */,
+				546CB7C71EA212450048ADAB /* MXNearLiveCell.xib in Resources */,
 				546CB7631EA0C32F0048ADAB /* MXLaunchViewController.xib in Resources */,
 				546CB7721EA0CA570048ADAB /* MXNearViewController.xib in Resources */,
 				546CB7101EA0A2C60048ADAB /* Assets.xcassets in Resources */,
@@ -644,6 +653,7 @@
 			files = (
 				546CB7751EA0D4C50048ADAB /* MXMainTopView.m in Sources */,
 				546CB7941EA1501B0048ADAB /* MXLiveCell.m in Sources */,
+				546CB7C61EA212450048ADAB /* MXNearLiveCell.m in Sources */,
 				546CB7841EA141BB0048ADAB /* MXNetworkEngine.m in Sources */,
 				546CB7521EA0B5AE0048ADAB /* MXProfileViewController.m in Sources */,
 				546CB76C1EA0CA4C0048ADAB /* MXHotViewController.m in Sources */,
