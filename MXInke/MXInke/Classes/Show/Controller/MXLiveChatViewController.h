@@ -7,7 +7,9 @@
 //
 
 #import "MXBaseViewController.h"
+@class MXLive;
 
 @interface MXLiveChatViewController : MXBaseViewController
+@property (nonatomic, strong) MXLive *live;
 
 @end

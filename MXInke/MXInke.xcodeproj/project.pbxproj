@@ -53,6 +53,7 @@
 		546CB7B81EA168400048ADAB /* MXPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 546CB7B71EA168400048ADAB /* MXPlayerViewController.m */; };
 		546CB7BC1EA1CD220048ADAB /* MXLiveChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 546CB7BA1EA1CD220048ADAB /* MXLiveChatViewController.m */; };
 		546CB7BD1EA1CD220048ADAB /* MXLiveChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 546CB7BB1EA1CD220048ADAB /* MXLiveChatViewController.xib */; };
+		546CB7C01EA2041E0048ADAB /* MXLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 546CB7BF1EA2041E0048ADAB /* MXLocationManager.m */; };
 		6D645A60C7CA29773BF83055 /* libPods-MXInke.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B716B2427701A20A42B6026 /* libPods-MXInke.a */; };
 /* End PBXBuildFile section */
 
@@ -130,6 +131,8 @@
 		546CB7B91EA1CD220048ADAB /* MXLiveChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXLiveChatViewController.h; sourceTree = "<group>"; };
 		546CB7BA1EA1CD220048ADAB /* MXLiveChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXLiveChatViewController.m; sourceTree = "<group>"; };
 		546CB7BB1EA1CD220048ADAB /* MXLiveChatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MXLiveChatViewController.xib; sourceTree = "<group>"; };
+		546CB7BE1EA2041E0048ADAB /* MXLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXLocationManager.h; sourceTree = "<group>"; };
+		546CB7BF1EA2041E0048ADAB /* MXLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXLocationManager.m; sourceTree = "<group>"; };
 		55B3FD7852124680F50FC64A /* Pods-MXInke.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MXInke.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MXInke/Pods-MXInke.debug.xcconfig"; sourceTree = "<group>"; };
 		5B716B2427701A20A42B6026 /* libPods-MXInke.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MXInke.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7FF7D48EA1713139D26E958 /* Pods-MXInke.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MXInke.release.xcconfig"; path = "Pods/Target Support Files/Pods-MXInke/Pods-MXInke.release.xcconfig"; sourceTree = "<group>"; };
@@ -272,6 +275,8 @@
 		546CB71E1EA0A57D0048ADAB /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				546CB7BE1EA2041E0048ADAB /* MXLocationManager.h */,
+				546CB7BF1EA2041E0048ADAB /* MXLocationManager.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -660,6 +665,7 @@
 				546CB7391EA0A57D0048ADAB /* AppDelegate.m in Sources */,
 				546CB78A1EA1497F0048ADAB /* MXLive.m in Sources */,
 				546CB77E1EA13EA80048ADAB /* MXBaseHandler.m in Sources */,
+				546CB7C01EA2041E0048ADAB /* MXLocationManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

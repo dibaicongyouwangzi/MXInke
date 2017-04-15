@@ -10,8 +10,12 @@
 //
 
 #import "MXLiveChatViewController.h"
+#import "MXLive.h"
+#import <UIImageView+WebCache.h>
 
 @interface MXLiveChatViewController ()
+@property (weak, nonatomic) IBOutlet UIImageView *iconView;
+@property (weak, nonatomic) IBOutlet UILabel *peopleCount;
 
 @end
 
@@ -19,22 +23,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    self.iconView.layer.cornerRadius = 15;
+    self.iconView.layer.masksToBounds = YES;
+
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)setLive:(MXLive *)live {
+    _live = live;
+    [self.iconView sd_setImageWithURL:[NSURL URLWithString:live.creator.portrait] placeholderImage:[UIImage imageNamed:@"default_room"]];
+    
+    [NSTimer scheduledTimerWithTimeInterval:1.0 repeats:YES block:^(NSTimer * _Nonnull timer) {
+        self.peopleCount.text = [@(arc4random_uniform(10000)) stringValue];
+    }];
 }
-*/
 
 @end

@@ -66,6 +66,7 @@ static NSString *identifier = @"live";
     
     MXLiveCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     cell.live = self.datalist[indexPath.row];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
 }
 

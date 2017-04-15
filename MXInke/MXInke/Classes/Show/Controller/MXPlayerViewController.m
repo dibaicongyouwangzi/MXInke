@@ -62,6 +62,8 @@
     [self.liveChatVc.view mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self.view);
     }];
+    
+    self.liveChatVc.live = self.live;
 }
 
 - (void)initUI {

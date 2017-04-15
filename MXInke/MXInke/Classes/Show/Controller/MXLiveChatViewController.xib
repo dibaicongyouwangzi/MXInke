@@ -11,6 +11,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MXLiveChatViewController">
             <connections>
+                <outlet property="iconView" destination="ppH-Va-mJB" id="y18-4u-nA5"/>
+                <outlet property="peopleCount" destination="Dfv-Hy-ddo" id="9bm-tM-ifV"/>
                 <outlet property="view" destination="W1X-oA-0D9" id="rzV-Qg-cSh"/>
             </connections>
         </placeholder>
