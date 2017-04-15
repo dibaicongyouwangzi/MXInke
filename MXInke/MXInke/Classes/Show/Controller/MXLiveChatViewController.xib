@@ -13,6 +13,7 @@
             <connections>
                 <outlet property="iconView" destination="ppH-Va-mJB" id="y18-4u-nA5"/>
                 <outlet property="peopleCount" destination="Dfv-Hy-ddo" id="9bm-tM-ifV"/>
+                <outlet property="shareImageView" destination="nPq-qJ-ni7" id="sfI-UZ-2Jf"/>
                 <outlet property="view" destination="W1X-oA-0D9" id="rzV-Qg-cSh"/>
             </connections>
         </placeholder>
@@ -33,7 +34,7 @@
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mg_room_btn_liwu_h" translatesAutoresizingMaskIntoConstraints="NO" id="iUE-aY-iPQ">
                             <rect key="frame" x="225" y="10" width="40" height="40"/>
                         </imageView>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mg_room_btn_fenxiang_h" translatesAutoresizingMaskIntoConstraints="NO" id="nPq-qJ-ni7">
+                        <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mg_room_btn_fenxiang_h" translatesAutoresizingMaskIntoConstraints="NO" id="nPq-qJ-ni7">
                             <rect key="frame" x="275" y="10" width="40" height="40"/>
                         </imageView>
                     </subviews>
