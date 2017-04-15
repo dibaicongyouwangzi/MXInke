@@ -10,6 +10,8 @@
 #import <IJKMediaFramework/IJKMediaFramework.h>
 #import <UIImageView+WebCache.h>
 #import <YYKit.h>
+#import "MXLiveChatViewController.h"
+#import <Masonry.h>
 
 @interface MXPlayerViewController ()
 @property (nonatomic, retain) id<IJKMediaPlayback> player;
@@ -18,9 +20,19 @@
 @property (nonatomic, strong) UIImageView *blurImageView;
 
 @property (nonatomic, strong) UIButton *closeButton;
+
+@property (nonatomic, strong) MXLiveChatViewController *liveChatVc;
+
 @end
 
 @implementation MXPlayerViewController
+
+- (MXLiveChatViewController *)liveChatVc {
+    if (!_liveChatVc) {
+        _liveChatVc = [[MXLiveChatViewController alloc] init];
+    }
+    return _liveChatVc;
+}
 
 - (UIButton *)closeButton {
     if (!_closeButton) {
@@ -39,10 +51,22 @@
     [self initUI];
 
     [self initPlayer];
+    
+    [self addChildVC];
+}
+
+- (void)addChildVC {
+    [self addChildViewController:self.liveChatVc];
+    [self.view addSubview:self.liveChatVc.view];
+    
+    [self.liveChatVc.view mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.view);
+    }];
 }
 
 - (void)initUI {
-//    self.view.backgroundColor = [UIColor blackColor];
+    
+    self.view.backgroundColor = [UIColor blackColor];
     self.blurImageView = [[UIImageView alloc] initWithFrame:self.view.bounds];
     [self.blurImageView sd_setImageWithURL:[NSURL URLWithString:self.live.creator.portrait] placeholderImage:[UIImage imageNamed:@"default_room"]];
     [self.view addSubview:self.blurImageView];
@@ -67,8 +91,6 @@
     self.player.view.frame = self.view.bounds;
     self.player.shouldAutoplay = YES;
     [self.view addSubview:self.player.view];
-    
-    [self.view addSubview:self.closeButton];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -81,12 +103,16 @@
     
     //准备播放
     [self.player prepareToPlay];
-}
+    
+    UIWindow * w = [[UIApplication sharedApplication].delegate window];
+    [w addSubview:self.closeButton];}
 
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
     
     self.navigationController.navigationBarHidden = NO;
+    
+    [self.closeButton removeFromSuperview];
 }
 
 - (void)viewDidDisappear:(BOOL)animated {

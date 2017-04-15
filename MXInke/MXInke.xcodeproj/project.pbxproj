@@ -51,6 +51,8 @@
 		546CB7B11EA163800048ADAB /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 546CB7B01EA163800048ADAB /* VideoToolbox.framework */; };
 		546CB7B51EA167CA0048ADAB /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 546CB7B41EA167C90048ADAB /* IJKMediaFramework.framework */; };
 		546CB7B81EA168400048ADAB /* MXPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 546CB7B71EA168400048ADAB /* MXPlayerViewController.m */; };
+		546CB7BC1EA1CD220048ADAB /* MXLiveChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 546CB7BA1EA1CD220048ADAB /* MXLiveChatViewController.m */; };
+		546CB7BD1EA1CD220048ADAB /* MXLiveChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 546CB7BB1EA1CD220048ADAB /* MXLiveChatViewController.xib */; };
 		6D645A60C7CA29773BF83055 /* libPods-MXInke.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B716B2427701A20A42B6026 /* libPods-MXInke.a */; };
 /* End PBXBuildFile section */
 
@@ -125,6 +127,9 @@
 		546CB7B41EA167C90048ADAB /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
 		546CB7B61EA168400048ADAB /* MXPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXPlayerViewController.h; sourceTree = "<group>"; };
 		546CB7B71EA168400048ADAB /* MXPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXPlayerViewController.m; sourceTree = "<group>"; };
+		546CB7B91EA1CD220048ADAB /* MXLiveChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXLiveChatViewController.h; sourceTree = "<group>"; };
+		546CB7BA1EA1CD220048ADAB /* MXLiveChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXLiveChatViewController.m; sourceTree = "<group>"; };
+		546CB7BB1EA1CD220048ADAB /* MXLiveChatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MXLiveChatViewController.xib; sourceTree = "<group>"; };
 		55B3FD7852124680F50FC64A /* Pods-MXInke.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MXInke.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MXInke/Pods-MXInke.debug.xcconfig"; sourceTree = "<group>"; };
 		5B716B2427701A20A42B6026 /* libPods-MXInke.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MXInke.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7FF7D48EA1713139D26E958 /* Pods-MXInke.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MXInke.release.xcconfig"; path = "Pods/Target Support Files/Pods-MXInke/Pods-MXInke.release.xcconfig"; sourceTree = "<group>"; };
@@ -450,6 +455,9 @@
 				546CB7701EA0CA570048ADAB /* MXNearViewController.xib */,
 				546CB7B61EA168400048ADAB /* MXPlayerViewController.h */,
 				546CB7B71EA168400048ADAB /* MXPlayerViewController.m */,
+				546CB7B91EA1CD220048ADAB /* MXLiveChatViewController.h */,
+				546CB7BA1EA1CD220048ADAB /* MXLiveChatViewController.m */,
+				546CB7BB1EA1CD220048ADAB /* MXLiveChatViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -565,6 +573,7 @@
 				546CB7131EA0A2C60048ADAB /* LaunchScreen.storyboard in Resources */,
 				546CB7531EA0B5AE0048ADAB /* MXProfileViewController.xib in Resources */,
 				546CB7951EA1501B0048ADAB /* MXLiveCell.xib in Resources */,
+				546CB7BD1EA1CD220048ADAB /* MXLiveChatViewController.xib in Resources */,
 				546CB7631EA0C32F0048ADAB /* MXLaunchViewController.xib in Resources */,
 				546CB7721EA0CA570048ADAB /* MXNearViewController.xib in Resources */,
 				546CB7101EA0A2C60048ADAB /* Assets.xcassets in Resources */,
@@ -642,6 +651,7 @@
 				546CB7711EA0CA570048ADAB /* MXNearViewController.m in Sources */,
 				546CB78D1EA149C70048ADAB /* MXCreator.m in Sources */,
 				546CB7491EA0B5480048ADAB /* MXBaseViewController.m in Sources */,
+				546CB7BC1EA1CD220048ADAB /* MXLiveChatViewController.m in Sources */,
 				546CB7621EA0C32F0048ADAB /* MXLaunchViewController.m in Sources */,
 				546CB74D1EA0B5A10048ADAB /* MXMainViewController.m in Sources */,
 				546CB7B81EA168400048ADAB /* MXPlayerViewController.m in Sources */,
