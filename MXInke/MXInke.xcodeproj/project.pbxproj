@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		545691E11EA25A5B00BD5375 /* MXAdvertiseHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 545691E01EA25A5B00BD5375 /* MXAdvertiseHandler.m */; };
+		545691E41EA25B2300BD5375 /* MXAdvertise.m in Sources */ = {isa = PBXBuildFile; fileRef = 545691E31EA25B2300BD5375 /* MXAdvertise.m */; };
 		546CB7101EA0A2C60048ADAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 546CB70F1EA0A2C60048ADAB /* Assets.xcassets */; };
 		546CB7131EA0A2C60048ADAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 546CB7111EA0A2C60048ADAB /* LaunchScreen.storyboard */; };
 		546CB7391EA0A57D0048ADAB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 546CB72D1EA0A57D0048ADAB /* AppDelegate.m */; };
@@ -60,6 +62,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		545691DF1EA25A5B00BD5375 /* MXAdvertiseHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXAdvertiseHandler.h; sourceTree = "<group>"; };
+		545691E01EA25A5B00BD5375 /* MXAdvertiseHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXAdvertiseHandler.m; sourceTree = "<group>"; };
+		545691E21EA25B2300BD5375 /* MXAdvertise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXAdvertise.h; sourceTree = "<group>"; };
+		545691E31EA25B2300BD5375 /* MXAdvertise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXAdvertise.m; sourceTree = "<group>"; };
 		546CB7001EA0A2C60048ADAB /* MXInke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MXInke.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		546CB70F1EA0A2C60048ADAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		546CB7121EA0A2C60048ADAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -191,6 +197,49 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		545691D71EA25A1000BD5375 /* Advertise */ = {
+			isa = PBXGroup;
+			children = (
+				545691DA1EA25A1000BD5375 /* Model */,
+				545691DB1EA25A1000BD5375 /* View */,
+				545691D81EA25A1000BD5375 /* Controller */,
+				545691D91EA25A1000BD5375 /* Handler */,
+			);
+			path = Advertise;
+			sourceTree = "<group>";
+		};
+		545691D81EA25A1000BD5375 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		545691D91EA25A1000BD5375 /* Handler */ = {
+			isa = PBXGroup;
+			children = (
+				545691DF1EA25A5B00BD5375 /* MXAdvertiseHandler.h */,
+				545691E01EA25A5B00BD5375 /* MXAdvertiseHandler.m */,
+			);
+			path = Handler;
+			sourceTree = "<group>";
+		};
+		545691DA1EA25A1000BD5375 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				545691E21EA25B2300BD5375 /* MXAdvertise.h */,
+				545691E31EA25B2300BD5375 /* MXAdvertise.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		545691DB1EA25A1000BD5375 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		546CB6F71EA0A2C60048ADAB = {
 			isa = PBXGroup;
 			children = (
@@ -233,6 +282,7 @@
 			children = (
 				546CB71B1EA0A57D0048ADAB /* Base */,
 				546CB7341EA0A57D0048ADAB /* Show */,
+				545691D71EA25A1000BD5375 /* Advertise */,
 				546CB72F1EA0A57D0048ADAB /* Profile */,
 				546CB7251EA0A57D0048ADAB /* Live */,
 				546CB71F1EA0A57D0048ADAB /* Launch */,
@@ -654,7 +704,9 @@
 				546CB7751EA0D4C50048ADAB /* MXMainTopView.m in Sources */,
 				546CB7941EA1501B0048ADAB /* MXLiveCell.m in Sources */,
 				546CB7C61EA212450048ADAB /* MXNearLiveCell.m in Sources */,
+				545691E11EA25A5B00BD5375 /* MXAdvertiseHandler.m in Sources */,
 				546CB7841EA141BB0048ADAB /* MXNetworkEngine.m in Sources */,
+				545691E41EA25B2300BD5375 /* MXAdvertise.m in Sources */,
 				546CB7521EA0B5AE0048ADAB /* MXProfileViewController.m in Sources */,
 				546CB76C1EA0CA4C0048ADAB /* MXHotViewController.m in Sources */,
 				546CB7431EA0AC1B0048ADAB /* MXTabBarController.m in Sources */,
