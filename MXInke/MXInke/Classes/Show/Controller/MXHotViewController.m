@@ -41,6 +41,7 @@ static NSString *identifier = @"live";
 - (void)setupUI {
     self.tableView.backgroundColor = MXGlobalBg;
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([MXLiveCell class]) bundle:nil] forCellReuseIdentifier:identifier];
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.tableView.contentInset = UIEdgeInsetsMake(64, 0, 49 + 70, 0);
     self.tableView.scrollIndicatorInsets = self.tableView.contentInset;
 }

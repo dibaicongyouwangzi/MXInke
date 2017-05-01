@@ -44,7 +44,7 @@
 
 - (void)addVcs {
     
-    NSMutableArray *array = [NSMutableArray arrayWithArray:@[@"MXMainViewController", @"MXProfileViewController"]];
+    NSMutableArray *array = [NSMutableArray arrayWithArray:@[@"MXMainViewController", @"MXMeViewController"]];
     for (NSInteger i = 0; i < array.count; i++) {
         NSString *vcName = array[i];
         UIViewController *vc = [[NSClassFromString(vcName) alloc] init];
@@ -60,6 +60,7 @@
 - (void)tabBar:(MXTabBar *)tabBar clickButton:(MXItemType)index {
     
     if (index != MXItemTypeLaunch) {
+        self.selectedIndex = index;
         return;
     }
     

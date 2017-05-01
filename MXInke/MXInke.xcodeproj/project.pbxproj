@@ -59,8 +59,13 @@
 		546CB7C01EA2041E0048ADAB /* MXLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 546CB7BF1EA2041E0048ADAB /* MXLocationManager.m */; };
 		546CB7C61EA212450048ADAB /* MXNearLiveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 546CB7C41EA212450048ADAB /* MXNearLiveCell.m */; };
 		546CB7C71EA212450048ADAB /* MXNearLiveCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 546CB7C51EA212450048ADAB /* MXNearLiveCell.xib */; };
+		5484E02B1EB6E68400B3B268 /* MXAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5484E02A1EB6E68400B3B268 /* MXAdViewController.m */; };
+		5484E02E1EB6FE1900B3B268 /* MXSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 5484E02D1EB6FE1900B3B268 /* MXSetting.m */; };
+		5484E03D1EB7327000B3B268 /* LFLivePreview.m in Sources */ = {isa = PBXBuildFile; fileRef = 5484E03C1EB7327000B3B268 /* LFLivePreview.m */; };
 		54D3616B1EB6DDDD0064F8FA /* videoAd.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 54D3616A1EB6DDDD0064F8FA /* videoAd.mp4 */; };
-		54D3616E1EB6DF260064F8FA /* MXLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54D3616D1EB6DF260064F8FA /* MXLoginViewController.m */; };
+		54D361711EB6E2890064F8FA /* MXMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54D361701EB6E2890064F8FA /* MXMeViewController.m */; };
+		54D361741EB6E2FE0064F8FA /* MXMeInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 54D361731EB6E2FE0064F8FA /* MXMeInfoView.m */; };
+		54D361761EB6E3090064F8FA /* MXMeInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54D361751EB6E3090064F8FA /* MXMeInfoView.xib */; };
 		6D645A60C7CA29773BF83055 /* libPods-MXInke.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B716B2427701A20A42B6026 /* libPods-MXInke.a */; };
 /* End PBXBuildFile section */
 
@@ -149,9 +154,18 @@
 		546CB7C31EA212450048ADAB /* MXNearLiveCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXNearLiveCell.h; sourceTree = "<group>"; };
 		546CB7C41EA212450048ADAB /* MXNearLiveCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXNearLiveCell.m; sourceTree = "<group>"; };
 		546CB7C51EA212450048ADAB /* MXNearLiveCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MXNearLiveCell.xib; sourceTree = "<group>"; };
+		5484E0291EB6E68400B3B268 /* MXAdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXAdViewController.h; sourceTree = "<group>"; };
+		5484E02A1EB6E68400B3B268 /* MXAdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXAdViewController.m; sourceTree = "<group>"; };
+		5484E02C1EB6FE1900B3B268 /* MXSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXSetting.h; sourceTree = "<group>"; };
+		5484E02D1EB6FE1900B3B268 /* MXSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXSetting.m; sourceTree = "<group>"; };
+		5484E03B1EB7327000B3B268 /* LFLivePreview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFLivePreview.h; sourceTree = "<group>"; };
+		5484E03C1EB7327000B3B268 /* LFLivePreview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFLivePreview.m; sourceTree = "<group>"; };
 		54D3616A1EB6DDDD0064F8FA /* videoAd.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = videoAd.mp4; sourceTree = "<group>"; };
-		54D3616C1EB6DF260064F8FA /* MXLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXLoginViewController.h; sourceTree = "<group>"; };
-		54D3616D1EB6DF260064F8FA /* MXLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXLoginViewController.m; sourceTree = "<group>"; };
+		54D3616F1EB6E2890064F8FA /* MXMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXMeViewController.h; sourceTree = "<group>"; };
+		54D361701EB6E2890064F8FA /* MXMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXMeViewController.m; sourceTree = "<group>"; };
+		54D361721EB6E2FE0064F8FA /* MXMeInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXMeInfoView.h; sourceTree = "<group>"; };
+		54D361731EB6E2FE0064F8FA /* MXMeInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXMeInfoView.m; sourceTree = "<group>"; };
+		54D361751EB6E3090064F8FA /* MXMeInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MXMeInfoView.xib; sourceTree = "<group>"; };
 		55B3FD7852124680F50FC64A /* Pods-MXInke.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MXInke.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MXInke/Pods-MXInke.debug.xcconfig"; sourceTree = "<group>"; };
 		5B716B2427701A20A42B6026 /* libPods-MXInke.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MXInke.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7FF7D48EA1713139D26E958 /* Pods-MXInke.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MXInke.release.xcconfig"; path = "Pods/Target Support Files/Pods-MXInke/Pods-MXInke.release.xcconfig"; sourceTree = "<group>"; };
@@ -434,6 +448,8 @@
 		546CB7291EA0A57D0048ADAB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5484E03B1EB7327000B3B268 /* LFLivePreview.h */,
+				5484E03C1EB7327000B3B268 /* LFLivePreview.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -451,6 +467,8 @@
 		546CB72B1EA0A57D0048ADAB /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				5484E0291EB6E68400B3B268 /* MXAdViewController.h */,
+				5484E02A1EB6E68400B3B268 /* MXAdViewController.m */,
 				546CB72C1EA0A57D0048ADAB /* AppDelegate.h */,
 				546CB72D1EA0A57D0048ADAB /* AppDelegate.m */,
 				546CB73C1EA0AA710048ADAB /* Inke.pch */,
@@ -474,8 +492,8 @@
 		546CB7301EA0A57D0048ADAB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				54D3616C1EB6DF260064F8FA /* MXLoginViewController.h */,
-				54D3616D1EB6DF260064F8FA /* MXLoginViewController.m */,
+				54D3616F1EB6E2890064F8FA /* MXMeViewController.h */,
+				54D361701EB6E2890064F8FA /* MXMeViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -490,6 +508,8 @@
 		546CB7321EA0A57D0048ADAB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5484E02C1EB6FE1900B3B268 /* MXSetting.h */,
+				5484E02D1EB6FE1900B3B268 /* MXSetting.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -497,6 +517,9 @@
 		546CB7331EA0A57D0048ADAB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				54D361721EB6E2FE0064F8FA /* MXMeInfoView.h */,
+				54D361731EB6E2FE0064F8FA /* MXMeInfoView.m */,
+				54D361751EB6E3090064F8FA /* MXMeInfoView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -649,6 +672,7 @@
 				546CB7131EA0A2C60048ADAB /* LaunchScreen.storyboard in Resources */,
 				545691EB1EA26C7400BD5375 /* MXAdvertiseView.xib in Resources */,
 				54D3616B1EB6DDDD0064F8FA /* videoAd.mp4 in Resources */,
+				54D361761EB6E3090064F8FA /* MXMeInfoView.xib in Resources */,
 				546CB7951EA1501B0048ADAB /* MXLiveCell.xib in Resources */,
 				546CB7BD1EA1CD220048ADAB /* MXLiveChatViewController.xib in Resources */,
 				546CB7C71EA212450048ADAB /* MXNearLiveCell.xib in Resources */,
@@ -715,6 +739,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54D361741EB6E2FE0064F8FA /* MXMeInfoView.m in Sources */,
 				546CB7751EA0D4C50048ADAB /* MXMainTopView.m in Sources */,
 				546CB7941EA1501B0048ADAB /* MXLiveCell.m in Sources */,
 				546CB7C61EA212450048ADAB /* MXNearLiveCell.m in Sources */,
@@ -723,13 +748,16 @@
 				545691E41EA25B2300BD5375 /* MXAdvertise.m in Sources */,
 				546CB76C1EA0CA4C0048ADAB /* MXHotViewController.m in Sources */,
 				546CB7431EA0AC1B0048ADAB /* MXTabBarController.m in Sources */,
-				54D3616E1EB6DF260064F8FA /* MXLoginViewController.m in Sources */,
+				5484E02E1EB6FE1900B3B268 /* MXSetting.m in Sources */,
 				546CB7671EA0CA3F0048ADAB /* MXFocusViewController.m in Sources */,
 				546CB73A1EA0A57D0048ADAB /* main.m in Sources */,
+				5484E03D1EB7327000B3B268 /* LFLivePreview.m in Sources */,
 				546CB77B1EA13A240048ADAB /* KBHttpTool.m in Sources */,
 				545692C01EA3E70E00BD5375 /* MXCacheHelper.m in Sources */,
 				546CB7591EA0B6BD0048ADAB /* MXBaseNavigationController.m in Sources */,
 				546CB7461EA0AC250048ADAB /* MXTabBar.m in Sources */,
+				54D361711EB6E2890064F8FA /* MXMeViewController.m in Sources */,
+				5484E02B1EB6E68400B3B268 /* MXAdViewController.m in Sources */,
 				546CB7711EA0CA570048ADAB /* MXNearViewController.m in Sources */,
 				546CB78D1EA149C70048ADAB /* MXCreator.m in Sources */,
 				546CB7491EA0B5480048ADAB /* MXBaseViewController.m in Sources */,

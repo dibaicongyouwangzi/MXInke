@@ -7,5 +7,6 @@ target 'MXInke' do
     pod 'Masonry'
     pod 'YYKit'
     pod 'MJExtension'
+    pod 'LFLiveKit'
 
 end
