@@ -9,7 +9,8 @@
 #import "AppDelegate.h"
 #import "MXTabBarController.h"
 #import "MXLocationManager.h"
-
+#import "MXAdvertiseView.h"
+#import "MXLoginViewController.h"
 
 @interface AppDelegate ()
 
@@ -22,7 +23,7 @@
     
     self.window = [[UIWindow alloc] init];
     self.window.frame = [UIScreen mainScreen].bounds;
-    self.window.rootViewController = [[MXTabBarController alloc] init];
+    self.window.rootViewController = [[MXLoginViewController alloc] init];
     [self.window makeKeyAndVisible];
     
     [[MXLocationManager sharedManager] getGps:^(NSString *lat, NSString *lon) {

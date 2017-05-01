@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		545691E11EA25A5B00BD5375 /* MXAdvertiseHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 545691E01EA25A5B00BD5375 /* MXAdvertiseHandler.m */; };
 		545691E41EA25B2300BD5375 /* MXAdvertise.m in Sources */ = {isa = PBXBuildFile; fileRef = 545691E31EA25B2300BD5375 /* MXAdvertise.m */; };
+		545691E71EA26C5700BD5375 /* MXAdvertiseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 545691E61EA26C5700BD5375 /* MXAdvertiseView.m */; };
+		545691EB1EA26C7400BD5375 /* MXAdvertiseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 545691EA1EA26C7400BD5375 /* MXAdvertiseView.xib */; };
+		545692C01EA3E70E00BD5375 /* MXCacheHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 545692BF1EA3E70E00BD5375 /* MXCacheHelper.m */; };
 		546CB7101EA0A2C60048ADAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 546CB70F1EA0A2C60048ADAB /* Assets.xcassets */; };
 		546CB7131EA0A2C60048ADAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 546CB7111EA0A2C60048ADAB /* LaunchScreen.storyboard */; };
 		546CB7391EA0A57D0048ADAB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 546CB72D1EA0A57D0048ADAB /* AppDelegate.m */; };
@@ -18,8 +21,6 @@
 		546CB7491EA0B5480048ADAB /* MXBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 546CB7481EA0B5480048ADAB /* MXBaseViewController.m */; };
 		546CB74D1EA0B5A10048ADAB /* MXMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 546CB74B1EA0B5A10048ADAB /* MXMainViewController.m */; };
 		546CB74E1EA0B5A10048ADAB /* MXMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 546CB74C1EA0B5A10048ADAB /* MXMainViewController.xib */; };
-		546CB7521EA0B5AE0048ADAB /* MXProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 546CB7501EA0B5AE0048ADAB /* MXProfileViewController.m */; };
-		546CB7531EA0B5AE0048ADAB /* MXProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 546CB7511EA0B5AE0048ADAB /* MXProfileViewController.xib */; };
 		546CB7591EA0B6BD0048ADAB /* MXBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 546CB7581EA0B6BD0048ADAB /* MXBaseNavigationController.m */; };
 		546CB7621EA0C32F0048ADAB /* MXLaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 546CB7601EA0C32F0048ADAB /* MXLaunchViewController.m */; };
 		546CB7631EA0C32F0048ADAB /* MXLaunchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 546CB7611EA0C32F0048ADAB /* MXLaunchViewController.xib */; };
@@ -58,6 +59,8 @@
 		546CB7C01EA2041E0048ADAB /* MXLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 546CB7BF1EA2041E0048ADAB /* MXLocationManager.m */; };
 		546CB7C61EA212450048ADAB /* MXNearLiveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 546CB7C41EA212450048ADAB /* MXNearLiveCell.m */; };
 		546CB7C71EA212450048ADAB /* MXNearLiveCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 546CB7C51EA212450048ADAB /* MXNearLiveCell.xib */; };
+		54D3616B1EB6DDDD0064F8FA /* videoAd.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 54D3616A1EB6DDDD0064F8FA /* videoAd.mp4 */; };
+		54D3616E1EB6DF260064F8FA /* MXLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54D3616D1EB6DF260064F8FA /* MXLoginViewController.m */; };
 		6D645A60C7CA29773BF83055 /* libPods-MXInke.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B716B2427701A20A42B6026 /* libPods-MXInke.a */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +69,11 @@
 		545691E01EA25A5B00BD5375 /* MXAdvertiseHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXAdvertiseHandler.m; sourceTree = "<group>"; };
 		545691E21EA25B2300BD5375 /* MXAdvertise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXAdvertise.h; sourceTree = "<group>"; };
 		545691E31EA25B2300BD5375 /* MXAdvertise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXAdvertise.m; sourceTree = "<group>"; };
+		545691E51EA26C5700BD5375 /* MXAdvertiseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXAdvertiseView.h; sourceTree = "<group>"; };
+		545691E61EA26C5700BD5375 /* MXAdvertiseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXAdvertiseView.m; sourceTree = "<group>"; };
+		545691EA1EA26C7400BD5375 /* MXAdvertiseView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MXAdvertiseView.xib; sourceTree = "<group>"; };
+		545692BE1EA3E70E00BD5375 /* MXCacheHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXCacheHelper.h; sourceTree = "<group>"; };
+		545692BF1EA3E70E00BD5375 /* MXCacheHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXCacheHelper.m; sourceTree = "<group>"; };
 		546CB7001EA0A2C60048ADAB /* MXInke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MXInke.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		546CB70F1EA0A2C60048ADAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		546CB7121EA0A2C60048ADAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -84,9 +92,6 @@
 		546CB74A1EA0B5A10048ADAB /* MXMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXMainViewController.h; sourceTree = "<group>"; };
 		546CB74B1EA0B5A10048ADAB /* MXMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXMainViewController.m; sourceTree = "<group>"; };
 		546CB74C1EA0B5A10048ADAB /* MXMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MXMainViewController.xib; sourceTree = "<group>"; };
-		546CB74F1EA0B5AE0048ADAB /* MXProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXProfileViewController.h; sourceTree = "<group>"; };
-		546CB7501EA0B5AE0048ADAB /* MXProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXProfileViewController.m; sourceTree = "<group>"; };
-		546CB7511EA0B5AE0048ADAB /* MXProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MXProfileViewController.xib; sourceTree = "<group>"; };
 		546CB7571EA0B6BD0048ADAB /* MXBaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXBaseNavigationController.h; sourceTree = "<group>"; };
 		546CB7581EA0B6BD0048ADAB /* MXBaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXBaseNavigationController.m; sourceTree = "<group>"; };
 		546CB75F1EA0C32F0048ADAB /* MXLaunchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXLaunchViewController.h; sourceTree = "<group>"; };
@@ -144,6 +149,9 @@
 		546CB7C31EA212450048ADAB /* MXNearLiveCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXNearLiveCell.h; sourceTree = "<group>"; };
 		546CB7C41EA212450048ADAB /* MXNearLiveCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXNearLiveCell.m; sourceTree = "<group>"; };
 		546CB7C51EA212450048ADAB /* MXNearLiveCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MXNearLiveCell.xib; sourceTree = "<group>"; };
+		54D3616A1EB6DDDD0064F8FA /* videoAd.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = videoAd.mp4; sourceTree = "<group>"; };
+		54D3616C1EB6DF260064F8FA /* MXLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXLoginViewController.h; sourceTree = "<group>"; };
+		54D3616D1EB6DF260064F8FA /* MXLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXLoginViewController.m; sourceTree = "<group>"; };
 		55B3FD7852124680F50FC64A /* Pods-MXInke.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MXInke.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MXInke/Pods-MXInke.debug.xcconfig"; sourceTree = "<group>"; };
 		5B716B2427701A20A42B6026 /* libPods-MXInke.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MXInke.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7FF7D48EA1713139D26E958 /* Pods-MXInke.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MXInke.release.xcconfig"; path = "Pods/Target Support Files/Pods-MXInke/Pods-MXInke.release.xcconfig"; sourceTree = "<group>"; };
@@ -236,6 +244,9 @@
 		545691DB1EA25A1000BD5375 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				545691E51EA26C5700BD5375 /* MXAdvertiseView.h */,
+				545691E61EA26C5700BD5375 /* MXAdvertiseView.m */,
+				545691EA1EA26C7400BD5375 /* MXAdvertiseView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -270,6 +281,7 @@
 		546CB7031EA0A2C60048ADAB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				54D3616A1EB6DDDD0064F8FA /* videoAd.mp4 */,
 				546CB70F1EA0A2C60048ADAB /* Assets.xcassets */,
 				546CB7111EA0A2C60048ADAB /* LaunchScreen.storyboard */,
 				546CB7141EA0A2C60048ADAB /* Info.plist */,
@@ -332,6 +344,8 @@
 			children = (
 				546CB7BE1EA2041E0048ADAB /* MXLocationManager.h */,
 				546CB7BF1EA2041E0048ADAB /* MXLocationManager.m */,
+				545692BE1EA3E70E00BD5375 /* MXCacheHelper.h */,
+				545692BF1EA3E70E00BD5375 /* MXCacheHelper.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -460,9 +474,8 @@
 		546CB7301EA0A57D0048ADAB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				546CB74F1EA0B5AE0048ADAB /* MXProfileViewController.h */,
-				546CB7501EA0B5AE0048ADAB /* MXProfileViewController.m */,
-				546CB7511EA0B5AE0048ADAB /* MXProfileViewController.xib */,
+				54D3616C1EB6DF260064F8FA /* MXLoginViewController.h */,
+				54D3616D1EB6DF260064F8FA /* MXLoginViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -634,7 +647,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				546CB7131EA0A2C60048ADAB /* LaunchScreen.storyboard in Resources */,
-				546CB7531EA0B5AE0048ADAB /* MXProfileViewController.xib in Resources */,
+				545691EB1EA26C7400BD5375 /* MXAdvertiseView.xib in Resources */,
+				54D3616B1EB6DDDD0064F8FA /* videoAd.mp4 in Resources */,
 				546CB7951EA1501B0048ADAB /* MXLiveCell.xib in Resources */,
 				546CB7BD1EA1CD220048ADAB /* MXLiveChatViewController.xib in Resources */,
 				546CB7C71EA212450048ADAB /* MXNearLiveCell.xib in Resources */,
@@ -707,12 +721,13 @@
 				545691E11EA25A5B00BD5375 /* MXAdvertiseHandler.m in Sources */,
 				546CB7841EA141BB0048ADAB /* MXNetworkEngine.m in Sources */,
 				545691E41EA25B2300BD5375 /* MXAdvertise.m in Sources */,
-				546CB7521EA0B5AE0048ADAB /* MXProfileViewController.m in Sources */,
 				546CB76C1EA0CA4C0048ADAB /* MXHotViewController.m in Sources */,
 				546CB7431EA0AC1B0048ADAB /* MXTabBarController.m in Sources */,
+				54D3616E1EB6DF260064F8FA /* MXLoginViewController.m in Sources */,
 				546CB7671EA0CA3F0048ADAB /* MXFocusViewController.m in Sources */,
 				546CB73A1EA0A57D0048ADAB /* main.m in Sources */,
 				546CB77B1EA13A240048ADAB /* KBHttpTool.m in Sources */,
+				545692C01EA3E70E00BD5375 /* MXCacheHelper.m in Sources */,
 				546CB7591EA0B6BD0048ADAB /* MXBaseNavigationController.m in Sources */,
 				546CB7461EA0AC250048ADAB /* MXTabBar.m in Sources */,
 				546CB7711EA0CA570048ADAB /* MXNearViewController.m in Sources */,
@@ -720,6 +735,7 @@
 				546CB7491EA0B5480048ADAB /* MXBaseViewController.m in Sources */,
 				546CB7BC1EA1CD220048ADAB /* MXLiveChatViewController.m in Sources */,
 				546CB7621EA0C32F0048ADAB /* MXLaunchViewController.m in Sources */,
+				545691E71EA26C5700BD5375 /* MXAdvertiseView.m in Sources */,
 				546CB74D1EA0B5A10048ADAB /* MXMainViewController.m in Sources */,
 				546CB7B81EA168400048ADAB /* MXPlayerViewController.m in Sources */,
 				546CB7901EA14A990048ADAB /* MXMJExtensionConfig.m in Sources */,
