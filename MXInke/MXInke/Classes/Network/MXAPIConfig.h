@@ -27,6 +27,6 @@
 #define API_Advertise @"advertise/get"
 
 
-
+#define Live_Me @"rtmp://live.hkstv.hk.lxdns.com:1935/live/dachanzi"
 
 @end

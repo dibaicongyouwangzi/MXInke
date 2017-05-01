@@ -382,7 +382,7 @@ inline static NSString *formatedSpeed(float bytes, float elapsed_milli) {
 
 - (void)startLive {
     LFLiveStreamInfo *stream = [LFLiveStreamInfo new];
-    stream.url = @"rtmp://live.hkstv.hk.lxdns.com:1935/live/dachanzi";
+    stream.url = Live_Me;
     [self.session startLive:stream];
 }
 

@@ -88,7 +88,7 @@
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_0056" translatesAutoresizingMaskIntoConstraints="NO" id="clq-XU-YOm" userLabel="头像">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dachanzi" translatesAutoresizingMaskIntoConstraints="NO" id="clq-XU-YOm" userLabel="头像">
                             <rect key="frame" x="70.5" y="-25.5" width="35" height="35"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="35" id="NTx-Tp-KCf"/>
@@ -170,7 +170,7 @@
         </view>
     </objects>
     <resources>
-        <image name="IMG_0056" width="512" height="512"/>
+        <image name="dachanzi" width="512" height="512"/>
         <image name="global_male" width="13" height="13"/>
         <image name="global_search" width="17" height="17"/>
         <image name="me_btn_edit_h_" width="14" height="13"/>

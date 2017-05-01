@@ -33,7 +33,14 @@
     self.nameLabel.text = live.creator.nick;
     self.locationLabel.text = live.city;
     self.onlineLabel.text = [@(live.onlineUsers) stringValue];
-    [self.bigImageView sd_setImageWithURL:[NSURL URLWithString:live.creator.portrait] placeholderImage:[UIImage imageNamed:@"default_room"]];
+    
+    if ([live.creator.portrait isEqualToString:@"dachanzi"]) {
+        self.headView.image = [UIImage imageNamed:@"dachanzi"];
+        self.bigImageView.image = [UIImage imageNamed:@"dachanzi"];
+    } else {
+        [self.headView sd_setImageWithURL:[NSURL URLWithString:live.creator.portrait] placeholderImage:[UIImage imageNamed:@"default_room"]];
+        [self.bigImageView sd_setImageWithURL:[NSURL URLWithString:live.creator.portrait] placeholderImage:[UIImage imageNamed:@"default_room"]];
+    }
 }
 
 

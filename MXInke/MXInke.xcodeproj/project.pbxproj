@@ -25,7 +25,6 @@
 		546CB7621EA0C32F0048ADAB /* MXLaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 546CB7601EA0C32F0048ADAB /* MXLaunchViewController.m */; };
 		546CB7631EA0C32F0048ADAB /* MXLaunchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 546CB7611EA0C32F0048ADAB /* MXLaunchViewController.xib */; };
 		546CB7671EA0CA3F0048ADAB /* MXFocusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 546CB7651EA0CA3F0048ADAB /* MXFocusViewController.m */; };
-		546CB7681EA0CA3F0048ADAB /* MXFocusViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 546CB7661EA0CA3F0048ADAB /* MXFocusViewController.xib */; };
 		546CB76C1EA0CA4C0048ADAB /* MXHotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 546CB76A1EA0CA4C0048ADAB /* MXHotViewController.m */; };
 		546CB7711EA0CA570048ADAB /* MXNearViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 546CB76F1EA0CA570048ADAB /* MXNearViewController.m */; };
 		546CB7721EA0CA570048ADAB /* MXNearViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 546CB7701EA0CA570048ADAB /* MXNearViewController.xib */; };
@@ -104,7 +103,6 @@
 		546CB7611EA0C32F0048ADAB /* MXLaunchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MXLaunchViewController.xib; sourceTree = "<group>"; };
 		546CB7641EA0CA3F0048ADAB /* MXFocusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXFocusViewController.h; sourceTree = "<group>"; };
 		546CB7651EA0CA3F0048ADAB /* MXFocusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXFocusViewController.m; sourceTree = "<group>"; };
-		546CB7661EA0CA3F0048ADAB /* MXFocusViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MXFocusViewController.xib; sourceTree = "<group>"; };
 		546CB7691EA0CA4C0048ADAB /* MXHotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXHotViewController.h; sourceTree = "<group>"; };
 		546CB76A1EA0CA4C0048ADAB /* MXHotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXHotViewController.m; sourceTree = "<group>"; };
 		546CB76E1EA0CA570048ADAB /* MXNearViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXNearViewController.h; sourceTree = "<group>"; };
@@ -543,7 +541,6 @@
 				546CB74C1EA0B5A10048ADAB /* MXMainViewController.xib */,
 				546CB7641EA0CA3F0048ADAB /* MXFocusViewController.h */,
 				546CB7651EA0CA3F0048ADAB /* MXFocusViewController.m */,
-				546CB7661EA0CA3F0048ADAB /* MXFocusViewController.xib */,
 				546CB7691EA0CA4C0048ADAB /* MXHotViewController.h */,
 				546CB76A1EA0CA4C0048ADAB /* MXHotViewController.m */,
 				546CB76E1EA0CA570048ADAB /* MXNearViewController.h */,
@@ -679,7 +676,6 @@
 				546CB7631EA0C32F0048ADAB /* MXLaunchViewController.xib in Resources */,
 				546CB7721EA0CA570048ADAB /* MXNearViewController.xib in Resources */,
 				546CB7101EA0A2C60048ADAB /* Assets.xcassets in Resources */,
-				546CB7681EA0CA3F0048ADAB /* MXFocusViewController.xib in Resources */,
 				546CB74E1EA0B5A10048ADAB /* MXMainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
